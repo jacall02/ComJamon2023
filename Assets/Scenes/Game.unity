@@ -692,6 +692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TornilloGrande (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9132803062821768287, guid: f33b3c141cd7b07429bef185a10af3a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f33b3c141cd7b07429bef185a10af3a9, type: 3}
 --- !u!4 &504927473 stripped
