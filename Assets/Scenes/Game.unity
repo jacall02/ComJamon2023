@@ -687,7 +687,7 @@ PrefabInstance:
       objectReference: {fileID: 6127241623724825202}
     - target: {fileID: 7394707989859279769, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Sumbit
+      value: Submit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
