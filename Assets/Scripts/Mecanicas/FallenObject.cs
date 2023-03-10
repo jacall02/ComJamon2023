@@ -5,13 +5,8 @@ using UnityEngine;
 public class FallenObject : MonoBehaviour
 {
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void Fall()
     {
-        //si el objeto que choca el collider es un destornillador
-        if (collision.gameObject.tag == "Destornillador")
-        {
-            this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
-
-        }
+        this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
     }
 }

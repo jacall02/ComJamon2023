@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6375833539813995007}
   - component: {fileID: 3315871534695731195}
   - component: {fileID: 6393008256892929374}
+  - component: {fileID: 8815513954199951013}
   m_Layer: 0
   m_Name: TornilloChico
   m_TagString: Untagged
@@ -144,5 +145,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64c99c5dbaecb85469e472da160d8116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8815513954199951013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066212639028245442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87b56736f674a34389d52315f7396e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
