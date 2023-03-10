@@ -62,13 +62,21 @@ public class GameManager : MonoBehaviour
         {
             animatorCajonDestornillador.SetBool("abrir", true);
             cajonAbierto = false;
-            
-           
+                    
         }
-        else
+        //else
+        //{
+        //    animatorCajonDestornillador.SetBool("abrir", false);
+        //    cajonAbierto = true;
+        //}
+    }
+
+    public void CerrarCajon()
+    {
+        if (!cajonAbierto)
         {
-            animatorCajonDestornillador.SetBool("abrir", false);
-            cajonAbierto = true;
+            animatorCajonDestornillador.SetBool("abrir", true);
+            cajonAbierto = false;
         }
     }
 

@@ -33,15 +33,18 @@ public class ClickableDrag : MonoBehaviour
     void OnMouseOver()
     {
         //si se hace click izq
-        if (Input.GetMouseButtonDown(0))
+        if (!selected && Input.GetMouseButtonDown(0))
         {
             //permitimos seleccion
-            selected = true;
-            initPos = this.transform.position;
+            Invoke("grabObject", 0.1f);
         }
 
 
     }
 
-
+    private void grabObject()
+    {
+        selected = true;
+        initPos = this.transform.position;
+    }
 }
