@@ -8,6 +8,14 @@ public class GameManager : MonoBehaviour
 
     #region parameters
     private bool cajonAbierto = true;
+
+    [SerializeField]
+    private int nSubmits;
+
+    public int Submits { get { return nSubmits; } }
+
+    public int correctEndingSubmits;
+
     #endregion
 
     #region references
@@ -45,7 +53,7 @@ public class GameManager : MonoBehaviour
 #endif
     }
 
-   
+    //JUGABILIDAD----------------------------------------------------
 
     //boton que da orden de abrirse o cerrarse
     public void AbrirCajon()
@@ -62,5 +70,11 @@ public class GameManager : MonoBehaviour
             animatorCajonDestornillador.SetBool("abrir", false);
             cajonAbierto = true;
         }
+    }
+
+    public void Sumbit()
+    {
+        nSubmits++;
+        Debug.Log("Intentos en el juez: " + nSubmits);
     }
 }

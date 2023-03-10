@@ -1371,7 +1371,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998353520}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.241716, y: 2.3832607, z: 2.4094856}
+  m_LocalPosition: {x: -5.241716, y: 2.3832607, z: 1.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1537,6 +1537,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2722958321222527348, guid: 70e0eaf0de8f2fe418fcdacadb3614a9, type: 3}
+      propertyPath: nSubmits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2722958321222527348, guid: 70e0eaf0de8f2fe418fcdacadb3614a9, type: 3}
+      propertyPath: correctEndingSubmits
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2722958321222527348, guid: 70e0eaf0de8f2fe418fcdacadb3614a9, type: 3}
       propertyPath: animatorCajonDestornillador
       value: 
