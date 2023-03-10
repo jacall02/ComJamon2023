@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using static System.Net.Mime.MediaTypeNames;
+using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(this.gameObject); // don't destroy the GameManager object when a new scene is loaded
+            DOTween.Init(true, true);
         }
         else
         {
@@ -51,13 +53,14 @@ public class GameManager : MonoBehaviour
         if(cajonAbierto)
         {
             animatorCajonDestornillador.SetBool("abrir", true);
+            cajonAbierto = false;
             
            
         }
         else
         {
             animatorCajonDestornillador.SetBool("abrir", false);
-            
+            cajonAbierto = true;
         }
     }
 }
