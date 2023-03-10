@@ -22,6 +22,6 @@ public class Mainmenu : MonoBehaviour
         //se pasa a la siguiente escena por orden
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         //llamada Game
-        SceneManager.LoadScene("Game");
+        //SceneManager.LoadScene("Game");
     }
 }
