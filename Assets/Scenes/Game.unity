@@ -324,6 +324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 152206243}
   - component: {fileID: 152206242}
+  - component: {fileID: 152206244}
   m_Layer: 0
   m_Name: Screen
   m_TagString: Untagged
@@ -399,6 +400,19 @@ Transform:
   m_Father: {fileID: 1087472359}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &152206244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152206241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563802486e9d67349b81c63ee4183e16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TLimit: {fileID: 992419471}
 --- !u!4 &189453587 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4066212639028245443, guid: e11f73bbe1db6054997fc742597455df, type: 3}
@@ -1093,7 +1107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &992419472
 SpriteRenderer:
   m_ObjectHideFlags: 0
