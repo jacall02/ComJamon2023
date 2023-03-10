@@ -23,6 +23,7 @@ public class DragAndDrop : MonoBehaviour
         {
             // no permitimos seleccion
             selected = false;
+            //bd
         }
     }
     //cuando el cursor esta encima lo detecta
