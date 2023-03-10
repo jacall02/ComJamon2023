@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void Sumbit()
+    public void Submit()
     {
         nSubmits++;
         Debug.Log("Intentos en el juez: " + nSubmits);
