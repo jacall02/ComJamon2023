@@ -4,6 +4,16 @@ using static System.Net.Mime.MediaTypeNames;
 
 public class GameManager : MonoBehaviour
 {
+
+    #region parameters
+    private bool cajonAbierto = true;
+    #endregion
+
+    #region references
+    [SerializeField]
+    private Animator animatorCajonDestornillador;
+    #endregion
+
     public static GameManager instance; // singleton instance of the GameManager
 
     private void Awake()
@@ -11,11 +21,11 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // don't destroy the GameManager object when a new scene is loaded
+            DontDestroyOnLoad(this.gameObject); // don't destroy the GameManager object when a new scene is loaded
         }
         else
         {
-            Destroy(gameObject); // if an instance already exists, destroy this one
+            Destroy(this.gameObject); // if an instance already exists, destroy this one
         }
     }
 
@@ -31,5 +41,23 @@ public class GameManager : MonoBehaviour
 #else
         Application.Quit();
 #endif
+    }
+
+   
+
+    //boton que da orden de abrirse o cerrarse
+    public void AbrirCajon()
+    {
+        if(cajonAbierto)
+        {
+            animatorCajonDestornillador.SetBool("abrir", true);
+            
+           
+        }
+        else
+        {
+            animatorCajonDestornillador.SetBool("abrir", false);
+            
+        }
     }
 }

@@ -16,7 +16,7 @@ public class DragAndDrop : MonoBehaviour
             //coordenadas del raton
             Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             //posicion del objeto sigue las coordenadas del raton todo el rato
-            transform.position = new Vector2(cursorPos.x, cursorPos.y);
+            transform.position = new Vector3(cursorPos.x, cursorPos.y,-5);
         }
 
         if (Input.GetMouseButtonUp(0))
