@@ -19,14 +19,21 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region references
+
     [SerializeField]
     private Animator animatorCajonDestornillador;
+
+    private protected SoundManager soundManager;
+
     #endregion
 
     public static GameManager instance; // singleton instance of the GameManager
 
     private void Awake()
     {
+        //buscamos el soundManager
+        soundManager = FindObjectOfType<SoundManager>();
+
         if (instance == null)
         {
             instance = this;
@@ -77,6 +84,9 @@ public class GameManager : MonoBehaviour
 
     public void Submit()
     {
+        //musica soundManager
+        soundManager.SeleccionAudio(0, 1f);
+        //efecto
         nSubmits++;
         Debug.Log("Intentos en el juez: " + nSubmits);
     }
