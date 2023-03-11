@@ -132,18 +132,8 @@ public class GameManager : MonoBehaviour
 
     public void PulsarPalanca()
     {
-       
-        //si se pulsa
-        ///*if(Input.GetMouseButtonDown(0))*/
-        //{
-            Debug.Log("hce");
-            pulsarPalanca.SetBool("palancapulsada", true);
-            Invoke("QuitarPalanca", 1f);
-        //}
-        //else
-        //{
-            //pulsarPalanca.SetBool("palancapulsada", false);
-        //}
+        pulsarPalanca.SetBool("palancapulsada", true);
+        Invoke("QuitarPalanca", 1f);
         
     }
 
