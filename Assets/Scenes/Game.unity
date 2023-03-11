@@ -487,7 +487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contadorTimeLimit: 30
   TLimit: {fileID: 992419471}
-  wrongAnswer: {fileID: 0}
+  wrongAnswer: {fileID: 9119919096763965904}
 --- !u!4 &189453587 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4066212639028245443, guid: e11f73bbe1db6054997fc742597455df, type: 3}
