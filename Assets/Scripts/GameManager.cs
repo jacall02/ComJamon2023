@@ -15,17 +15,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private int limitesSubmits;
 
-    //numero de veces que se ha pulsdo E
-    [SerializeField]
-    private int nE;
-
-    //limite de veces que hay que pulsar E para final que suene musica
-    [SerializeField]
-    private int limitesE;
-
     public int Submits { get { return nSubmits; } }
 
-    public int EPressed { get { return nE; } }
 
     public int correctEndingSubmits;
 
@@ -36,11 +27,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Animator animatorCajonDestornillador;
 
-    [SerializeField]
-    private Animator pulsarPalanca;
-
     private protected SoundManager soundManager;
-
+    public SoundManager GetSoundManager { get { return soundManager; }}
     #endregion
 
     public static GameManager instance; // singleton instance of the GameManager
@@ -112,33 +100,5 @@ public class GameManager : MonoBehaviour
             //correct answer
             Debug.Log("Correct Answer");
         }
-    }
-
-    public void PulsarE()
-    {
-        //musica soundManager
-        soundManager.SeleccionAudio(0, 1f);
-        //efecto
-        nE++;
-        Debug.Log("Veces pulsadas E: " + nE);
-
-        //comprobacion de si hemos pulsado E suficientes veces
-        if(EPressed >= limitesE)
-        {
-            //suena musica
-            soundManager.SeleccionAudio(1, 1f);
-        }
-    }
-
-    public void PulsarPalanca()
-    {
-        pulsarPalanca.SetBool("palancapulsada", true);
-        Invoke("QuitarPalanca", 1f);
-        
-    }
-
-    private void QuitarPalanca()
-    {
-        pulsarPalanca.SetBool("palancapulsada", false);
     }
 }

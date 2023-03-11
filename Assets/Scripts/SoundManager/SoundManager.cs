@@ -18,7 +18,7 @@ public class SoundManager : MonoBehaviour
 
     public void SeleccionAudio(int indice, float volumen)
     {
-        //pone un audioClip con volumen determinado
+        // pone un audioClip con volumen determinado 
         controlAudio.PlayOneShot(audios[indice], volumen);
 
     }
