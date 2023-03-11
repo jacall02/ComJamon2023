@@ -111,7 +111,7 @@ public class GameManager : MonoBehaviour
         SoundManager.instance.PlayEffect(0, 1f);
         //efecto
         nSubmits++;
-        Debug.Log("Intentos en el juez: " + nSubmits);
+        //Debug.Log("Intentos en el juez: " + nSubmits);
 
         //comprobacion de si hemos pulsado submit suficientes veces
         if (Submits >= limitesSubmits)

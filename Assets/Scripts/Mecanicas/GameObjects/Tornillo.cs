@@ -37,6 +37,7 @@ public class Tornillo : MonoBehaviour
             if (collision.gameObject.tag == "Destornillador")
             {
                 this.GetComponent<FallenObject>().Fall();
+                this.GetComponentInParent<Rejilla>().RestarTornillo();
             }
         }
         //si el objeto que choca el collider es un destornillador
