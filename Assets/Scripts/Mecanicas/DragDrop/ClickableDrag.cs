@@ -8,6 +8,9 @@ public class ClickableDrag : MonoBehaviour
 
     private Vector3 initPos;
 
+
+    private bool restartPosition = true;
+
     // Update is called once per frame
     void Update()
     {
@@ -20,12 +23,15 @@ public class ClickableDrag : MonoBehaviour
             transform.position = new Vector3(cursorPos.x, cursorPos.y, -5);
         }
 
-        if (selected && Input.GetMouseButtonDown(0))
-        {
-            // no permitimos seleccion
-            selected = false;
-            //bd
-            this.transform.position = initPos;
+        if (selected && restartPosition)
+        {          
+            if (Input.GetMouseButtonDown(0))
+            {
+                // no permitimos seleccion
+                selected = false;
+                //bd
+                this.transform.position = initPos;        
+            }
         }
     }
     //cuando el cursor esta encima lo detecta
@@ -37,13 +43,17 @@ public class ClickableDrag : MonoBehaviour
             //permitimos seleccion
             Invoke("grabObject", 0.1f);
         }
-
-
     }
 
     private void grabObject()
     {
         selected = true;
         initPos = this.transform.position;
+    }
+
+    //Determina si hacer click reestablcece la posición del objecto o no
+    public void SetRestartPosition(bool b)
+    {
+        restartPosition = b;
     }
 }
