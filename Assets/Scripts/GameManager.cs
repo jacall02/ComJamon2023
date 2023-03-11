@@ -106,7 +106,7 @@ public class GameManager : MonoBehaviour
     public void Submit()
     {
         //musica soundManager
-        SoundManager.instance.SeleccionAudio(0, 1f);
+        SoundManager.instance.PlayEffect(0, 1f);
         //efecto
         nSubmits++;
         Debug.Log("Intentos en el juez: " + nSubmits);

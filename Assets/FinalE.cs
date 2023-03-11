@@ -20,7 +20,7 @@ public class FinalE : Final
     public void PulsarE()
     {
         //musica soundManager
-        SoundManager.instance.SeleccionAudio(0, 1f);
+        SoundManager.instance.PlayEffect(0, 1f);
         //efecto
         nE++;
         Debug.Log("Veces pulsadas E: " + nE);
@@ -29,7 +29,7 @@ public class FinalE : Final
         if (EPressed >= limitesE)
         {
             //suena musica
-            SoundManager.instance.SeleccionAudio(1, 1f);
+            SoundManager.instance.PlayMusic(1, 1f);
             // final desbloqueado
             GameManager.instance.ConseguirFinal(ID);
 

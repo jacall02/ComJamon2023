@@ -32,12 +32,20 @@ public class SoundManager : MonoBehaviour
     {
         //se asocia a elemento AudioSource
         controlAudio = GetComponent<AudioSource>();
+        controlAudio.Stop();
     }
 
-    public void SeleccionAudio(int indice, float volumen)
+    public void PlayEffect(int indice, float volumen)
+    {
+        controlAudio.PlayOneShot(audios[indice], volumen);
+    }
+
+    public void PlayMusic(int indice, float volumen)
     {
         // pone un audioClip con volumen determinado 
-        controlAudio.PlayOneShot(audios[indice], volumen);
 
+        controlAudio.Stop();
+        controlAudio.PlayOneShot(audios[indice], volumen);
+        
     }
 }
