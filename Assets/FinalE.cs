@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FinalE : MonoBehaviour
 {
-
+    private IDFinales ID = IDFinales.E;
     //numero de veces que se ha pulsdo E
     private int nE;
 
@@ -14,12 +14,10 @@ public class FinalE : MonoBehaviour
 
     public int EPressed { get { return nE; } }
 
-    private SoundManager soundManager;
-
     public void PulsarE()
     {
         //musica soundManager
-        soundManager.SeleccionAudio(0, 1f);
+        SoundManager.instance.SeleccionAudio(0, 1f);
         //efecto
         nE++;
         Debug.Log("Veces pulsadas E: " + nE);
@@ -28,19 +26,17 @@ public class FinalE : MonoBehaviour
         if (EPressed >= limitesE)
         {
             //suena musica
-            soundManager.SeleccionAudio(1, 1f);
+            SoundManager.instance.SeleccionAudio(1, 1f);
+            // final desbloqueado
+            GameManager.instance.ConseguirFinal(ID);
         }
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-        soundManager = GameManager.instance.GetSoundManager;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
     }
 }

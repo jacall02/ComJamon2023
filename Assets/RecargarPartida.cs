@@ -24,7 +24,7 @@ public class RecargarPartida : MonoBehaviour
     private void QuitarPalanca()
     {
         pulsarPalanca.SetBool("palancapulsada", false);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameManager.instance.RestartGame();
     }
 
 }
