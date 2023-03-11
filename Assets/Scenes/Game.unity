@@ -487,6 +487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contadorTimeLimit: 30
   TLimit: {fileID: 992419471}
+  WrongAnswer: {fileID: 9119919096763965904}
 --- !u!4 &189453587 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4066212639028245443, guid: e11f73bbe1db6054997fc742597455df, type: 3}
@@ -2818,7 +2819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022079468}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 3.84, z: -0.67051435}
+  m_LocalPosition: {x: 2, y: 3.84, z: 0.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3469,7 +3470,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1188590167}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.30503225, y: -0.026836872, z: -0.5600002}
+  m_LocalPosition: {x: -0.30503225, y: -0.03, z: -0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5405,7 +5406,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959350967}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.78, y: 2.1, z: 1.1754856}
+  m_LocalPosition: {x: 1, y: 1.76, z: 1.1754856}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6599,7 +6600,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2146009304
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7204,7 +7205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5718416784835512847, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5718416784835512847, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -7212,6 +7213,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5718416784835512847, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718416784835512847, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5718416784835512847, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
@@ -7223,7 +7228,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1884176293}
     - target: {fileID: 5718416784835512847, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 152206244}
+    - target: {fileID: 5718416784835512847, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718416784835512847, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5718416784835512847, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
@@ -7235,6 +7248,10 @@ PrefabInstance:
       value: ComprobacionCorrectAnswer
       objectReference: {fileID: 0}
     - target: {fileID: 5718416784835512847, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: TryEnding
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718416784835512847, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: SubmitButton, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -7243,7 +7260,15 @@ PrefabInstance:
       value: FinalCorrectAnswer, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5718416784835512847, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: TimeLimit, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718416784835512847, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718416784835512847, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5718416785619586880, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
