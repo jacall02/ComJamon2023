@@ -30,8 +30,9 @@ public class DesactivadorBotones : MonoBehaviour
         }
     }
 
-    public void ActivarNota(int i)
+    public void ActivarNota(IDFinales i)
     {
-        notas[i].enabled = true;
+        GameManager.instance.ConseguirFinal(i);
+        notas[(int)i].enabled = true;
     }
 }

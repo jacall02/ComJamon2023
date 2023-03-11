@@ -31,10 +31,9 @@ public class FinalE : Final
             //suena musica
             SoundManager.instance.PlayMusic(1, 1f);
             // final desbloqueado
-            GameManager.instance.ConseguirFinal(ID);
 
             desactivador.DesactivarTodo();
-            desactivador.ActivarNota((int)ID);
+            desactivador.ActivarNota(ID);
         }
     }
 }
