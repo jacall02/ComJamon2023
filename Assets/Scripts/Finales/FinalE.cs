@@ -20,7 +20,7 @@ public class FinalE : Final
     public void PulsarE()
     {
         //musica soundManager
-        SoundManager.instance.PlayEffect(0, 1f);
+        SoundManager.instance.PlayEffect(3, 1f);
         //efecto
         nE++;
         Debug.Log("Veces pulsadas E: " + nE);
