@@ -1375,10 +1375,24 @@ MonoBehaviour:
   - LaMejorRuta.cpp
   - PollosHermanos.cpp
   - PaseoEnBici.cpp
-  - PaseoEnBici.cpp
+  - PajarosAhogados.cpp
   - ElMediano.cpp
   - PajarosAhumados.cpp
   - PetrolerosHundidos.cpp
+  - VerdantSorrow.cpp
+  - KiwinasVistas.cpp
+  - MonosRepartidores.cpp
+  - LaReinaDelSuper.cpp
+  - VueloEnBandada.cpp
+  - Calatayud.cpp
+  - Crowfender.cpp
+  - Quaver3000.cpp
+  - Andalucia.cpp
+  - MeQuierenFrontear.cpp
+  - SoyUnNinja.cpp
+  - ArpasArpegiadas.cpp
+  - AlturaVirtuosa2.cpp
+  - TorrijonDeArroz.cpp
 --- !u!1 &706384328
 GameObject:
   m_ObjectHideFlags: 0
