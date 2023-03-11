@@ -15,7 +15,7 @@ public class TimeLimit : MonoBehaviour
     void Update()
     {
         contadorTimeLimit -= Time.deltaTime;
-        Debug.Log(contadorTimeLimit);
+        //Debug.Log(contadorTimeLimit);
         if(contadorTimeLimit<=0)
         {
             //aparece TimeLimit

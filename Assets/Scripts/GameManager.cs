@@ -36,6 +36,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Animator animatorCajonDestornillador;
 
+    [SerializeField]
+    private Animator pulsarPalanca;
+
     private protected SoundManager soundManager;
 
     #endregion
@@ -125,5 +128,27 @@ public class GameManager : MonoBehaviour
             //suena musica
             soundManager.SeleccionAudio(1, 1f);
         }
+    }
+
+    public void PulsarPalanca()
+    {
+       
+        //si se pulsa
+        ///*if(Input.GetMouseButtonDown(0))*/
+        //{
+            Debug.Log("hce");
+            pulsarPalanca.SetBool("palancapulsada", true);
+            Invoke("QuitarPalanca", 1f);
+        //}
+        //else
+        //{
+            //pulsarPalanca.SetBool("palancapulsada", false);
+        //}
+        
+    }
+
+    private void QuitarPalanca()
+    {
+        pulsarPalanca.SetBool("palancapulsada", false);
     }
 }

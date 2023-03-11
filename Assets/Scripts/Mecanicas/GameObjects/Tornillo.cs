@@ -10,7 +10,6 @@ public class Tornillo : MonoBehaviour
         if (collision.gameObject.tag == "Destornillador")
         {
             this.GetComponent<FallenObject>().Fall();
-
         }
     }
 }
