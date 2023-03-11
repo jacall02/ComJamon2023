@@ -1392,9 +1392,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bde31d0fe49c9447a3f6089503b7ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionDuration: 1.5
+  transitionDuration: 1
   transitionEase: 3
   canvasGroup: {fileID: 1085312619}
+  myPanel: {fileID: 622840196}
 --- !u!114 &1085312618
 MonoBehaviour:
   m_ObjectHideFlags: 0

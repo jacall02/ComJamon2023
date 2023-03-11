@@ -14,6 +14,7 @@ public class Mainmenu : MonoBehaviour
     public Ease transitionEase = Ease.InOutQuad;
 
     [SerializeField] private CanvasGroup canvasGroup;
+    [SerializeField] private RectTransform myPanel;
 
     void Start()
     {
@@ -25,11 +26,16 @@ public class Mainmenu : MonoBehaviour
         
     }
 
+    private void CambiaEscena(string sceneName)
+    {
+        canvasGroup.DOFade(0f, transitionDuration).SetEase(transitionEase).OnComplete(() => SceneManager.LoadScene(sceneName));
+    }
+
     public void CambioEscenaGame(string sceneName)
     {
         canvasGroup.blocksRaycasts = true;
 
-        canvasGroup.DOFade(0f, transitionDuration).SetEase(transitionEase).OnComplete(()=>SceneManager.LoadScene(sceneName));
+        myPanel.DOLocalMoveX(1500.0f, transitionDuration).SetEase(transitionEase).OnComplete(()=>CambiaEscena(sceneName));
 
         //se pasa a la siguiente escena por orden
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
