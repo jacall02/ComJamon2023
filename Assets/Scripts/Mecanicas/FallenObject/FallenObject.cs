@@ -14,5 +14,11 @@ public class FallenObject : MonoBehaviour
     {
         //this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
         this.GetComponent<Rigidbody2D>().gravityScale = 1;
+        Invoke("DestroyThisObject", 5f);
+    }
+
+    private void DestroyThisObject()
+    {
+        Destroy(this.gameObject);
     }
 }
