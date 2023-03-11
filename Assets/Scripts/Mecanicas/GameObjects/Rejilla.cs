@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class Rejilla : MonoBehaviour
 {
+    private int nTornillos;
+
+    private void Start()
+    {
+        nTornillos = GetComponentsInChildren<Tornillo>().Length;
+    }
     public void RestarTornillo()
     {
-        if(GetComponentsInChildren<Tornillo>().Length == 0)
+        nTornillos--;
+        if (nTornillos == 0)
         {
             GetComponent<FallenObject>().Fall();
         }

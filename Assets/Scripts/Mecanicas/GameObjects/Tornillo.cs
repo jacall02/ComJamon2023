@@ -13,6 +13,12 @@ public class Tornillo : MonoBehaviour
     //    }
     //}
 
+    private bool tornilloQuitado;
+    private void Start()
+    {
+        tornilloQuitado= false;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Destornillador")
@@ -31,16 +37,24 @@ public class Tornillo : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-
+        if (tornilloQuitado)
+            return;
         if (Input.GetMouseButton(0))
         {
             if (collision.gameObject.tag == "Destornillador")
             {
+                Debug.Log("TornillosCollision");
                 this.GetComponent<FallenObject>().Fall();
-                this.GetComponentInParent<Rejilla>().RestarTornillo();
+                Invoke("AvisaRejilla", 0.2f);
+                tornilloQuitado = true;
             }
         }
         //si el objeto que choca el collider es un destornillador
             
+    }
+
+    private void AvisaRejilla()
+    {
+        this.GetComponentInParent<Rejilla>().RestarTornillo();
     }
 }
