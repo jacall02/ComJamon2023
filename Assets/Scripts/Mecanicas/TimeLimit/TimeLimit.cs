@@ -17,7 +17,7 @@ public class TimeLimit : Final
     private void Awake()
     {
         finalAvailable = true;
-        ID = IDFinales.TimeLimit;
+        ID = IDFinales.Timelimit;
     }
 
     // Update is called once per frame
