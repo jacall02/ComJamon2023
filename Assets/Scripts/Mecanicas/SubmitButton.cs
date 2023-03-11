@@ -13,7 +13,7 @@ public class SubmitButton : MonoBehaviour
     public void AddOneSubmit()
     {
         int i = GameManager.instance.Submit();
-        if(i==numeroSubmitsAbrirCajon)
+        if (i == numeroSubmitsAbrirCajon)
         {
             CajonComportamiento.AbrirCajon();
         }
