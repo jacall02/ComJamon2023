@@ -8,7 +8,6 @@ public class ClickableDrag : MonoBehaviour
 
     private Vector3 initPos;
 
-
     // Update is called once per frame
     void Update()
     {
