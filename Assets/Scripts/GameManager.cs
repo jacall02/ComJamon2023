@@ -7,7 +7,8 @@ using UnityEngine.UI;
 
 public enum IDFinales
 {
-    E = 9, TimeLimit = 1, Correct = 2, Profesores = 3
+   ClickLol = 0, Plagio = 1, RobarMochila = 2, Pajaros = 3, Timelimit = 4, 
+   Bombardeo = 5, Profesores = 6, Correct = 7, Laboratorio = 8, E = 9
 }
 
 public class GameManager : MonoBehaviour
