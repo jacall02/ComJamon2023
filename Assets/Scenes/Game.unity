@@ -1393,6 +1393,8 @@ MonoBehaviour:
   - ArpasArpegiadas.cpp
   - AlturaVirtuosa2.cpp
   - TorrijonDeArroz.cpp
+  - Jesse.cpp
+  - "Se\xF1orWhite.cpp"
 --- !u!1 &706384328
 GameObject:
   m_ObjectHideFlags: 0
