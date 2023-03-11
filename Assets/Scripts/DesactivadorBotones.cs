@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,8 @@ public class DesactivadorBotones : MonoBehaviour
     [SerializeField] private List<SpriteRenderer> notas;
     [SerializeField] private List<FallenObject> objetosQueCaen;
     [SerializeField] private List<ClickableDrag> herramientas;
+
+    [SerializeField] private SpriteRenderer palancaIluminada;
 
     public void Start()
     {
@@ -60,6 +63,9 @@ public class DesactivadorBotones : MonoBehaviour
             if (b != null)
                 b.enabled = false;
         }
+
+        // Activamos animación a la palanca para que se vea
+        palancaIluminada.DOFade(1.0f, 0.5f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.OutSine);
     }
 
     public void ActivarNota(IDFinales i)

@@ -7,6 +7,8 @@ public class RecargarPartida : MonoBehaviour
 {
     [SerializeField]
     private Animator pulsarPalanca;
+    [SerializeField]
+    private Animator pulsarPalancaIluminada;
 
     private void Start()
     {
@@ -17,6 +19,7 @@ public class RecargarPartida : MonoBehaviour
     {
         Debug.Log("Palancas pulsadas");
         pulsarPalanca.SetBool("palancapulsada", true);
+        pulsarPalancaIluminada.SetBool("palancapulsada", true);
         Invoke("QuitarPalanca", 1f);
 
     }
@@ -24,6 +27,7 @@ public class RecargarPartida : MonoBehaviour
     private void QuitarPalanca()
     {
         pulsarPalanca.SetBool("palancapulsada", false);
+        pulsarPalancaIluminada.SetBool("palancapulsada", false);
         SoundManager.instance.controlAudio.Stop();
         GameManager.instance.RestartGame();
     }
