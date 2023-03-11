@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TimeLimit : MonoBehaviour
+public class TimeLimit : Final
 {
     //creamos contador de x segundos y aparece TimeLimit
     [SerializeField]
@@ -14,9 +14,10 @@ public class TimeLimit : MonoBehaviour
 
     private bool finalAvailable;
 
-    private void Start()
+    private void Awake()
     {
         finalAvailable = true;
+        ID = IDFinales.TimeLimit;
     }
 
     // Update is called once per frame
@@ -31,6 +32,8 @@ public class TimeLimit : MonoBehaviour
         {
             //aparece TimeLimit
             TLimit.SetActive(true);
+            desactivador.DesactivarTodo();
+            desactivador.ActivarNota(ID);
             finalAvailable = false;
         }
         else if(GameManager.instance.Submits != 0)
