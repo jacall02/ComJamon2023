@@ -43,7 +43,6 @@ public class Tornillo : MonoBehaviour
         {
             if (collision.gameObject.tag == "Destornillador")
             {
-                Debug.Log("TornillosCollision");
                 this.GetComponent<FallenObject>().Fall();
                 Invoke("AvisaRejilla", 0.2f);
                 tornilloQuitado = true;

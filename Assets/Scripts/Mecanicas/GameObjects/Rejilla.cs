@@ -6,6 +6,8 @@ public class Rejilla : Final
 {
     private int nTornillos;
 
+    private ClickableDrag cD;
+
     private void Awake()
     {
         ID = IDFinales.Pajaros;
@@ -19,7 +21,14 @@ public class Rejilla : Final
         {
             GetComponent<FallenObject>().Fall();
             desactivador.ActivarNota(IDFinales.Pajaros);
+            cD.ResetPosition();
+        }
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (cD == null) { 
+            cD = collision.GetComponent<ClickableDrag>();
         }
     }
 }
