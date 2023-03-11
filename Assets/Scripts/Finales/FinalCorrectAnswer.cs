@@ -9,6 +9,9 @@ public class FinalCorrectAnswer : Final
     [SerializeField]
     private GameObject CorrectAnswer;
 
+    [SerializeField]
+    private GameObject WrongAnswer;
+
     void Awake()
     {
         ID = IDFinales.Correct;
@@ -30,5 +33,17 @@ public class FinalCorrectAnswer : Final
             desactivador.DesactivarTodo();
             desactivador.ActivarNota(ID);
         }
+        else
+        {
+            //sino se ha pulsado 40 veces
+            //Aparece Wrong Answer
+            WrongAnswer.SetActive(true);
+            Invoke("CerrarWrongAnswer", 0.2f);
+        }
+    }
+
+    public void CerrarWrongAnswer()
+    {
+        WrongAnswer.SetActive(false);
     }
 }
