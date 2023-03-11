@@ -23,6 +23,8 @@ public class FinalCorrectAnswer : Final
 
     public void ComprobacionCorrectAnswer()
     {
+        Invoke("CerrarWrongAnswer", 0.1f);
+
         //musica soundManager
         SoundManager.instance.PlayEffect(0, 1f);
 
@@ -30,7 +32,7 @@ public class FinalCorrectAnswer : Final
         //comprobacion de si hemos pulsado E suficientes veces
         if (GameManager.instance.Submits >= limiteSubmitsCorrect)
         {
-            CorrectAnswer.SetActive(true);
+            Invoke("AbrirCorrectAnswer", 0.2f);
             // final desbloqueado
 
             desactivador.DesactivarTodo();
@@ -38,15 +40,22 @@ public class FinalCorrectAnswer : Final
         }
         else
         {
+            Invoke("AbrirWrongAnswer", 0.2f);
             //sino se ha pulsado 40 veces
             //Aparece Wrong Answer
-            WrongAnswer.SetActive(true);
-            Invoke("CerrarWrongAnswer", wrongAnswerDuration);
         }
     }
 
     public void CerrarWrongAnswer()
     {
         WrongAnswer.SetActive(false);
+    }
+    public void AbrirWrongAnswer()
+    {
+        WrongAnswer.SetActive(true);
+    }
+    public void AbrirCorrectAnswer()
+    {
+        CorrectAnswer.SetActive(true);
     }
 }
