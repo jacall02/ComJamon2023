@@ -29,4 +29,6 @@ public class CajonComportamiento : MonoBehaviour
             cajonAbierto = false;
         }
     }
+
+
 }

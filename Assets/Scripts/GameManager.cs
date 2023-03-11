@@ -87,7 +87,7 @@ public class GameManager : MonoBehaviour
     //boton que da orden de abrirse o cerrarse
    
 
-    public void Submit()
+    public int Submit()
     {
         //musica soundManager
         SoundManager.instance.PlayEffect(0, 1f);
@@ -101,6 +101,8 @@ public class GameManager : MonoBehaviour
             //correct answer
             Debug.Log("Correct Answer");
         }
+
+        return nSubmits;
     }
 
     public void ResetSubmits()
