@@ -101,4 +101,9 @@ public class GameManager : MonoBehaviour
             Debug.Log("Correct Answer");
         }
     }
+
+    public void ResetSubmits()
+    {
+        nSubmits= 0;
+    }
 }

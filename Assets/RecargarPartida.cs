@@ -8,6 +8,11 @@ public class RecargarPartida : MonoBehaviour
     [SerializeField]
     private Animator pulsarPalanca;
 
+    private void Start()
+    {
+        GameManager.instance.ResetSubmits();
+    }
+
     public void PulsarPalanca()
     {
         Debug.Log("Palancas pulsadas");
