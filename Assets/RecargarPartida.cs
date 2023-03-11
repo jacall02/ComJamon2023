@@ -24,6 +24,7 @@ public class RecargarPartida : MonoBehaviour
     private void QuitarPalanca()
     {
         pulsarPalanca.SetBool("palancapulsada", false);
+        SoundManager.instance.controlAudio.Stop();
         GameManager.instance.RestartGame();
     }
 

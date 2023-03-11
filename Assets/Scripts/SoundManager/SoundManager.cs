@@ -6,7 +6,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     //control de audio
-    private AudioSource controlAudio;
+    public AudioSource controlAudio;
 
     //array que contenga todos los audioclips del juego
     [SerializeField] private protected AudioClip[] audios;
