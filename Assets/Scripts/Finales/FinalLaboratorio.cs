@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class FinalLaboratorio : Final
 {
-    [SerializeField] private AnimacionAlerta animacion;
+    [SerializeField] private AnimacionAlerta canvasAnimacion;
     [SerializeField] private int nClicks = 30;
     [SerializeField] private string herramienta = "Destornillador";
     [SerializeField] private GameObject lata;
@@ -58,7 +58,7 @@ public class FinalLaboratorio : Final
                 // Final conseguido
                 desactivador.ActivarNota(ID);
 
-                animacion.enabled = true;
+                canvasAnimacion.enabled = true;
             }
         }
     }
