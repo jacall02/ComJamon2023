@@ -32,6 +32,7 @@ public class DesactivadorBotones : MonoBehaviour
 
     public void ActivarNota(IDFinales i)
     {
+        DesactivarTodo();
         GameManager.instance.ConseguirFinal(i);
         notas[(int)i].enabled = true;
     }

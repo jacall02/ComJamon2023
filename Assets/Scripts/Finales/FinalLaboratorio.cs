@@ -55,7 +55,6 @@ public class FinalLaboratorio : Final
                 sonido = true;
 
                 // Final conseguido
-                desactivador.DesactivarTodo();
                 desactivador.ActivarNota(ID);
             }
         }

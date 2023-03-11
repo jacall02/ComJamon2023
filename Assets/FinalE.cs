@@ -32,7 +32,6 @@ public class FinalE : Final
             SoundManager.instance.PlayMusic(1, 1f);
 
             // final desbloqueado
-            desactivador.DesactivarTodo();
             desactivador.ActivarNota(ID);
         }
     }
