@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,23 @@ public class SoundManager : MonoBehaviour
 
     //array que contenga todos los audioclips del juego
     [SerializeField] private protected AudioClip[] audios;
+
+    public static SoundManager instance; // singleton instance of the GameManager
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject); // don't destroy the GameManager object when a new scene is loaded
+            DOTween.Init(true, true);
+        }
+        else
+        {
+            Destroy(this.gameObject); // if an instance already exists, destroy this one
+        }
+    }
+
 
     void Start()
     {
