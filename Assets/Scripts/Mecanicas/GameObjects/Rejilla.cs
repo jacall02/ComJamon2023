@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rejilla : MonoBehaviour
+public class Rejilla : Final
 {
     private int nTornillos;
+
+    private void Awake()
+    {
+        ID = IDFinales.Pajaros;
+    }
 
     private void Start()
     {
@@ -16,6 +21,7 @@ public class Rejilla : MonoBehaviour
         if (nTornillos == 0)
         {
             GetComponent<FallenObject>().Fall();
+            desactivador.ActivarNota(IDFinales.Pajaros);
         }
     }
 }
