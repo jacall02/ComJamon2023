@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SubmitButton : MonoBehaviour
 {
-    public void addOneSubmit()
+    public void AddOneSubmit()
     {
         GameManager.instance.Submit();
     }
