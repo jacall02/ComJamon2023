@@ -413,7 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563802486e9d67349b81c63ee4183e16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contadorTimeLimit: 10
+  contadorTimeLimit: 30
   TLimit: {fileID: 992419471}
 --- !u!4 &189453587 stripped
 Transform:
@@ -1551,7 +1551,7 @@ MonoBehaviour:
   - QuienEsRodrigo.cpp
   - ComandoEstelar.cpp
   - ArmasEuclideas.cpp
-  - ElEsquemPonzi.cpp
+  - ElEsquemaPonzi.cpp
   - AmigosDeMisAmigos.cpp
 --- !u!1 &706384328
 GameObject:
