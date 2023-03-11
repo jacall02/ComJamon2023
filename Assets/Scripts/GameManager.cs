@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     #region parameters
 
-    private bool cajonAbierto = true;
+   
 
     [SerializeField]
     private int nSubmits;
@@ -37,8 +37,7 @@ public class GameManager : MonoBehaviour
 
     #region references
 
-    [SerializeField]
-    private Animator animatorCajonDestornillador;
+   
 
     #endregion
 
@@ -86,24 +85,7 @@ public class GameManager : MonoBehaviour
     //JUGABILIDAD----------------------------------------------------
 
     //boton que da orden de abrirse o cerrarse
-    public void AbrirCajon()
-    {
-        if(cajonAbierto)
-        {
-            animatorCajonDestornillador.SetBool("abrir", true);
-            cajonAbierto = false;
-                    
-        }
-    }
-
-    public void CerrarCajon()
-    {
-        if (!cajonAbierto)
-        {
-            animatorCajonDestornillador.SetBool("abrir", true);
-            cajonAbierto = false;
-        }
-    }
+   
 
     public void Submit()
     {
