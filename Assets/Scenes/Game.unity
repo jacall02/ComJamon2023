@@ -206,8 +206,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6127241623724825202}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1213712166}
+        m_TargetAssemblyTypeName: CajonComportamiento, Assembly-CSharp
         m_MethodName: AbrirCajon
         m_Mode: 1
         m_Arguments:
@@ -3758,6 +3758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c63209c425f2cb744817c5b3a7cf7a0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animatorCajonDestornillador: {fileID: 1213712163}
 --- !u!1 &1231552606
 GameObject:
   m_ObjectHideFlags: 0
@@ -7355,17 +7356,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70e0eaf0de8f2fe418fcdacadb3614a9, type: 3}
---- !u!114 &6127241623724825202 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2722958321222527348, guid: 70e0eaf0de8f2fe418fcdacadb3614a9, type: 3}
-  m_PrefabInstance: {fileID: 6127241623724825201}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef838b8f8d15b2841b4e34aade35349c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &7394707988536490356 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5718416785619586883, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}

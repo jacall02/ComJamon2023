@@ -6,22 +6,27 @@ public class CajonComportamiento : MonoBehaviour
 {
 
 
-    //public void AbrirCajon()
-    //{
-    //    if (cajonAbierto)
-    //    {
-    //        animatorCajonDestornillador.SetBool("abrir", true);
-    //        cajonAbierto = false;
+    private bool cajonAbierto = true;
 
-    //    }
-    //}
+    [SerializeField]
+    private Animator animatorCajonDestornillador;
 
-    //public void CerrarCajon()
-    //{
-    //    if (!cajonAbierto)
-    //    {
-    //        animatorCajonDestornillador.SetBool("abrir", true);
-    //        cajonAbierto = false;
-    //    }
-    //}
+    public void AbrirCajon()
+    {
+        if (cajonAbierto)
+        {
+            animatorCajonDestornillador.SetBool("abrir", true);
+            cajonAbierto = false;
+
+        }
+    }
+
+    public void CerrarCajon()
+    {
+        if (!cajonAbierto)
+        {
+            animatorCajonDestornillador.SetBool("abrir", true);
+            cajonAbierto = false;
+        }
+    }
 }
