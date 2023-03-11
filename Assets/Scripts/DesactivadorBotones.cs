@@ -8,6 +8,8 @@ public class DesactivadorBotones : MonoBehaviour
     // Botones que se bloquean cuando consigues un final
     [SerializeField] private List<Button> buttons;
     [SerializeField] private List<SpriteRenderer> notas;
+    [SerializeField] private List<FallenObject> objetosQueCaen;
+    [SerializeField] private List<ClickableDrag> herramientas;
 
     public void Start()
     {
@@ -20,13 +22,43 @@ public class DesactivadorBotones : MonoBehaviour
                 notas[i].enabled = true;
             }
         }
+
+        foreach (FallenObject b in objetosQueCaen)
+        {
+            if (b != null)
+                b.enabled = true;
+        }
+
+        foreach (Button b in buttons)
+        {
+            if (b != null)
+                b.interactable = true;
+        }
+
+        foreach (ClickableDrag b in herramientas)
+        {
+            if (b != null)
+                b.enabled = true;
+        }
     }
     public void DesactivarTodo()
     {
+        foreach (FallenObject b in objetosQueCaen)
+        {
+            if (b != null)
+                b.enabled = false;
+        }
+
         foreach (Button b in buttons)
         {
             if (b != null)
                 b.interactable = false;
+        }
+
+        foreach (ClickableDrag b in herramientas)
+        {
+            if (b != null)
+                b.enabled = false;
         }
     }
 

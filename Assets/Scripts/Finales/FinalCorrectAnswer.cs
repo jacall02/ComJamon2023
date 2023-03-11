@@ -13,7 +13,7 @@ public class FinalCorrectAnswer : Final
     private GameObject WrongAnswer;
 
     [SerializeField]
-    private float wrongAnswerDuration = 2f;
+    private protected float wrongAnswerDuration = 2f;
 
     void Awake()
     {
