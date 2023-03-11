@@ -28,7 +28,8 @@ public class Mainmenu : MonoBehaviour
 
     private void CambiaEscena(string sceneName)
     {
-        canvasGroup.DOFade(0f, transitionDuration).SetEase(transitionEase).OnComplete(() => SceneManager.LoadScene(sceneName));
+        // canvasGroup.DOFade(0f, transitionDuration).SetEase(transitionEase).OnComplete(() => SceneManager.LoadScene(sceneName));
+        SceneManager.LoadScene(sceneName);
     }
 
     public void CambioEscenaGame(string sceneName)
