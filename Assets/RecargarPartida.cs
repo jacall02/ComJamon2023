@@ -8,12 +8,6 @@ public class RecargarPartida : MonoBehaviour
     [SerializeField]
     private Animator pulsarPalanca;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     public void PulsarPalanca()
     {
         Debug.Log("Palancas pulsadas");
@@ -27,4 +21,5 @@ public class RecargarPartida : MonoBehaviour
         pulsarPalanca.SetBool("palancapulsada", false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
 }

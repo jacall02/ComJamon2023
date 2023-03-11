@@ -17,6 +17,7 @@ public class RandomName : MonoBehaviour
     private void Start()
     {
         text_ = GetComponent<TextMeshProUGUI>();
+        ChangeName();
     }
 
     public void ChangeName()
