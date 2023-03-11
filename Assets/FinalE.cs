@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FinalE : MonoBehaviour
+public class FinalE : Final
 {
-    private IDFinales ID = IDFinales.E;
     //numero de veces que se ha pulsdo E
     private int nE;
-
     //limite de veces que hay que pulsar E para final que suene musica
     [SerializeField]
     private int limitesE;
-
     public int EPressed { get { return nE; } }
+
+    void Akawe()
+    {
+        ID = IDFinales.E;
+        nE = 0;
+    }
 
     public void PulsarE()
     {
@@ -29,14 +32,8 @@ public class FinalE : MonoBehaviour
             SoundManager.instance.SeleccionAudio(1, 1f);
             // final desbloqueado
             GameManager.instance.ConseguirFinal(ID);
+
+            desactivador.DesactivarTodo();
         }
-    }
-
-    void Start()
-    {
-    }
-
-    void Update()
-    {
     }
 }

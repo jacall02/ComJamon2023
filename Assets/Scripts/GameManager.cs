@@ -3,9 +3,11 @@ using UnityEngine.SceneManagement;
 using static System.Net.Mime.MediaTypeNames;
 using DG.Tweening;
 using System.Collections.Generic;
+using UnityEngine.UI;
+
 public enum IDFinales
 {
-    E = 1, TimeLimit = 2, Correct = 3, Profesores = 4
+    E = 0, TimeLimit = 1, Correct = 2, Profesores = 3
 }
 
 public class GameManager : MonoBehaviour
@@ -25,12 +27,9 @@ public class GameManager : MonoBehaviour
     public int correctEndingSubmits;
 
     // cuantos finales hay
-    private int nFinales;
+    private int nFinales = 10;
     // array de booleanos de si el final 'i' se ha conseguido
     private bool[] finales;
-
-    // Imagen que bloquea el input cuando consigues un final
-    [SerializeField] private GameObject blockImage;
 
     #endregion
 
@@ -57,13 +56,15 @@ public class GameManager : MonoBehaviour
         }
 
         finales = new bool[nFinales];
+        for (int i = 0; i < nFinales; ++i)
+        {
+            finales[i] = false;
+        }
     }
 
     public void ConseguirFinal(IDFinales final)
     {
         finales[(int)final] = true;
-
-
     }
 
     public void RestartGame()
