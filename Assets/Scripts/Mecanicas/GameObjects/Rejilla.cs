@@ -9,12 +9,9 @@ public class Rejilla : Final
     private void Awake()
     {
         ID = IDFinales.Pajaros;
-    }
-
-    private void Start()
-    {
         nTornillos = GetComponentsInChildren<Tornillo>().Length;
     }
+
     public void RestarTornillo()
     {
         nTornillos--;
@@ -22,6 +19,7 @@ public class Rejilla : Final
         {
             GetComponent<FallenObject>().Fall();
             desactivador.ActivarNota(IDFinales.Pajaros);
+
         }
     }
 }
