@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public enum IDFinales
 {
-    E = 0, TimeLimit = 1, Correct = 2, Profesores = 3
+    E = 9, TimeLimit = 1, Correct = 2, Profesores = 3
 }
 
 public class GameManager : MonoBehaviour
@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     private int nFinales = 10;
     // array de booleanos de si el final 'i' se ha conseguido
     private bool[] finales;
+    public bool[] GetFinales { get { return finales; } }
 
     #endregion
 

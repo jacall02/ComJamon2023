@@ -11,7 +11,7 @@ public class FinalE : Final
     private int limitesE;
     public int EPressed { get { return nE; } }
 
-    void Akawe()
+    void Awake()
     {
         ID = IDFinales.E;
         nE = 0;
@@ -34,6 +34,7 @@ public class FinalE : Final
             GameManager.instance.ConseguirFinal(ID);
 
             desactivador.DesactivarTodo();
+            desactivador.ActivarNota((int)ID);
         }
     }
 }
