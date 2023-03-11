@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2461561101172644762}
   - component: {fileID: 2461561101172644764}
   - component: {fileID: 4142511819123741275}
-  - component: {fileID: 5157547508030236976}
   - component: {fileID: 6395080950325824226}
   m_Layer: 0
   m_Name: Lata
@@ -129,18 +128,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9914403, y: 1.7260804}
   m_EdgeRadius: 0
---- !u!114 &5157547508030236976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2461561101172644763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1f2c4f0f49e10641965c86510a39d65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &6395080950325824226
 Rigidbody2D:
   serializedVersion: 4
@@ -149,7 +136,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2461561101172644763}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

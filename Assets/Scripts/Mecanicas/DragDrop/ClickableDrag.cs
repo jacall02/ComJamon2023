@@ -11,6 +11,14 @@ public class ClickableDrag : MonoBehaviour
 
     private bool restartPosition = true;
 
+    public void ResetPosition()
+    {
+        // no permitimos seleccion
+        selected = false;
+        //bd
+        this.transform.position = initPos;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -27,10 +35,7 @@ public class ClickableDrag : MonoBehaviour
         {          
             if (Input.GetMouseButtonDown(0))
             {
-                // no permitimos seleccion
-                selected = false;
-                //bd
-                this.transform.position = initPos;        
+                ResetPosition();
             }
         }
     }

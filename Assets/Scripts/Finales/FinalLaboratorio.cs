@@ -9,6 +9,7 @@ public class FinalLaboratorio : Final
     [SerializeField] private string herramienta = "Destornillador";
     [SerializeField] private GameObject lata;
     private bool lataActivada = false;
+    private bool sonido = false;
 
 
     private void Awake()
@@ -27,7 +28,7 @@ public class FinalLaboratorio : Final
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == herramienta)
+        if (collision.gameObject.tag == "Destornillador")
         {
             collision.GetComponent<ClickableDrag>().SetRestartPosition(false);
         }
@@ -35,7 +36,7 @@ public class FinalLaboratorio : Final
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == herramienta)
+        if (collision.gameObject.tag == "Destornillador")
         {
             collision.GetComponent<ClickableDrag>().SetRestartPosition(true);
         }
@@ -43,17 +44,21 @@ public class FinalLaboratorio : Final
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-
-        // Cuando se pulse la lata con la herramienta adecuada
-        if (Input.GetMouseButton(0))
+        if (!sonido && Input.GetMouseButton(0))
         {
             if (collision.gameObject.tag == herramienta)
             {
+                collision.GetComponent<ClickableDrag>().SetRestartPosition(true);
+                collision.GetComponent<ClickableDrag>().ResetPosition();
 
+                SoundManager.instance.PlayEffect(2, 1f);
+                sonido = true;
+
+                // Final conseguido
+                desactivador.DesactivarTodo();
+                desactivador.ActivarNota(ID);
             }
         }
-        //si el objeto que choca el collider es un destornillador
-
     }
 
 }
