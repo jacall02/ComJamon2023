@@ -26,6 +26,8 @@ public class RandomName : MonoBehaviour
         {
             text_.text = GetRandomFileName();
         }
+        //El número de intentos va asociado al nombre del cpp, lo reseteamos
+        GameManager.instance.ResetSubmits();
     }
 
     public string GetRandomFileName()
