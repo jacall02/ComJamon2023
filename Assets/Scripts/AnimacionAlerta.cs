@@ -9,7 +9,7 @@ public class AnimacionAlerta : MonoBehaviour
 
     void Start()
     {
-        myCanvas.DOFade(0.0f, 1.0f).SetLoops(-1, LoopType.Yoyo);
+        myCanvas.DOFade(0.75f, 1.0f).SetLoops(-1, LoopType.Yoyo);
     }
 
     // Update is called once per frame
