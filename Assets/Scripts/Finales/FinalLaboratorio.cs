@@ -20,6 +20,22 @@ public class FinalLaboratorio : Final
         ID = IDFinales.Laboratorio;
     }
 
+    private void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            SoundManager.instance.PlayEffect(2, 1f);
+            sonido = true;
+
+            //VOLUMEN DE DSI
+            volumneEffectDSI.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
+            // Final conseguido
+            desactivador.ActivarNota(ID);
+
+            canvasAnimacion.enabled = true;
+        }
+    }
+
     private void Update()
     {
         if (!lataActivada && GameManager.instance.Submits >= nClicks)
