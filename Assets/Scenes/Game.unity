@@ -2956,6 +2956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9153c71efd9aff4ebdfa73d4e8ae2ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volumneEffectPVLI: {fileID: 2074324063}
 --- !u!114 &1022079474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6428,6 +6429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9153c71efd9aff4ebdfa73d4e8ae2ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volumneEffectPVLI: {fileID: 0}
 --- !u!1 &2042059832
 GameObject:
   m_ObjectHideFlags: 0
@@ -6602,6 +6604,11 @@ MonoBehaviour:
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 6375833539813995007, guid: e11f73bbe1db6054997fc742597455df, type: 3}
   m_PrefabInstance: {fileID: 138714651}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2074324063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 393948726316232439, guid: 577f93ae7edb76e4fbef1c8eb43d4f2a, type: 3}
+  m_PrefabInstance: {fileID: 835218116}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2082217334
 PrefabInstance:
