@@ -11,4 +11,5 @@ public class Final : MonoBehaviour
     {
         desactivador = GameObject.FindObjectOfType<DesactivadorBotones>();
     }
+    public virtual void PasswordAccepted() { }
 }
