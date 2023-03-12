@@ -12361,6 +12361,8 @@ MonoBehaviour:
   avion: {fileID: 366003516}
   pantallaNegra: {fileID: 1635393105}
   X: {fileID: 1793254960}
+  textoUsuario: {fileID: 686998034}
+  nombreCpp: {fileID: 32782966}
 --- !u!114 &5622732591638186449
 MonoBehaviour:
   m_ObjectHideFlags: 0

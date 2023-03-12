@@ -22,6 +22,12 @@ public class FinalGrafos : Final
     [SerializeField]
     private GameObject X;
 
+    [SerializeField]
+    private GameObject textoUsuario;
+
+    [SerializeField]
+    private GameObject nombreCpp;
+
     void Awake()
     {
         ID = IDFinales.Bombardeo;
@@ -34,6 +40,8 @@ public class FinalGrafos : Final
         X.SetActive(false);
         facultad.SetActive(true);
         avion.SetActive(true);
+        textoUsuario.SetActive(false);
+        nombreCpp.SetActive(false);
         //efecto volumen MARP
         volumneEffectMARP.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
         // la contraseña es correcta y se acepta el final
