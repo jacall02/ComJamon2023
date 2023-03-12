@@ -8,15 +8,11 @@ public class HorrorMusicAleatorio : MonoBehaviour
     private float contadorCambioMusica = 5f;
 
     [SerializeField]
-    private int posibilidadMusicaMiedo = 2;
+    private  int posibilidadMusicaMiedo = 2;
 
     private void Start()
     {
-        InvokeRepeating("MusicaAleatoria", 5f, 5f);
-    }
-    private void Update()
-    {
-        
+        InvokeRepeating("MusicaAleatoria", 5f,contadorCambioMusica);
     }
 
     public void MusicaAleatoria()
