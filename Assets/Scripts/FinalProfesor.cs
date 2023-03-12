@@ -15,7 +15,7 @@ public class FinalProfesor : Final
     private void Awake()
     {
         ID = IDFinales.Profesores;
-        password.AttachFinalColores(this);
+        password.AttachFinal2(this);
         password.SetPassword2("DACA");
     }
     public override void PasswordAccepted()
