@@ -37,7 +37,7 @@ public class SoundManager : MonoBehaviour
 
     public void PlayEffect(int indice, float volumen)
     {
-        controlAudio.Stop();
+        //controlAudio.Stop();
         controlAudio.PlayOneShot(audios[indice], volumen);
     }
 

@@ -15,19 +15,32 @@ public class FinalE : Final
     private GameObject volumneEffectMus;
     public int EPressed { get { return nE; } }
 
+    private bool canPress = true;
+
     void Awake()
     {
         ID = IDFinales.E;
         nE = 0;
     }
 
+    private void activate()
+    {
+        canPress = true;
+    }
+
     public void PulsarE()
     {
-        //musica soundManager
-        SoundManager.instance.PlayEffect(3, 1f);
-        //efecto
-        nE++;
-        Debug.Log("Veces pulsadas E: " + nE);
+        if (canPress)
+        {
+            canPress = false;
+            //musica soundManager
+            SoundManager.instance.PlayEffect(3, 0.2f);
+            //efecto
+            nE++;
+            Debug.Log("Veces pulsadas E: " + nE);
+
+            Invoke("activate", 1f);
+        }
 
         //comprobacion de si hemos pulsado E suficientes veces
         if (EPressed >= limitesE)
