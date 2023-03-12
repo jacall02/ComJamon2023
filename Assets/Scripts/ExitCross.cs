@@ -19,6 +19,7 @@ public class ExitCross : Final
     public void DisableScreen()
     {   
         gO.SetActive(false);
+        SoundManager.instance.PlayEffect(24, 1f);
         volumneEffectDV.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
         desactivador.ActivarNota(ID);
     }
