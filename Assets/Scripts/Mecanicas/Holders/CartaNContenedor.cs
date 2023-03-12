@@ -45,7 +45,7 @@ public class CartaNContenedor : DropListener
             dG.enabled= false;
             //Llamar función carta
             panel.SetActive(true);
-
+            SoundManager.instance.PlayEffect(4, 1.0f);
         }
     }
 }
