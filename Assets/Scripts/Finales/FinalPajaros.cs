@@ -43,5 +43,14 @@ public class FinalPajaros : Final
         negro.SetActive(false);
         //aparece pajaro
         paharo.SetActive(true);
+        //alas pajaro
+        SoundManager.instance.PlayMusic(17, 0.2f);
+        //pajaro berrido
+        Invoke("PajaroChillido", 0.4f);
+    }
+
+    private void PajaroChillido()
+    {
+        SoundManager.instance.PlayMusic(18, 0.2f);
     }
 }
