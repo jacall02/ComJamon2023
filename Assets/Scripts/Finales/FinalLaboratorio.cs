@@ -76,7 +76,8 @@ public class FinalLaboratorio : Final
 
                 SoundManager.instance.PlayEffect(2, 1f);
                 sonido = true;
-
+                SoundManager.instance.PlayEffect(19, 1f);
+                //sonido alarma
                 //VOLUMEN DE DSI
                 volumneEffectDSI.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
                 // Final conseguido
