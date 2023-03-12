@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +18,9 @@ public class FinalCorrectAnswer : Final
 
     [SerializeField]
     private protected float wrongAnswerDuration = 2f;
+
+    [SerializeField]
+    private GameObject volumneEffectTPV;
 
     bool finalAvailable;
 
@@ -42,8 +46,10 @@ public class FinalCorrectAnswer : Final
         if (GameManager.instance.Submits >= limiteSubmitsCorrect)
         {
             Invoke("AbrirCorrectAnswer", 0.2f);
-            // final desbloqueado
 
+            //aplicamos efecto de volumen
+            volumneEffectTPV.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
+            // final desbloqueado
             desactivador.DesactivarTodo();
             desactivador.ActivarNota(ID);
             CerrarWrongAnswer();

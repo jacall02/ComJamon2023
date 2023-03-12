@@ -369,6 +369,11 @@ MonoBehaviour:
   wrongAnswer: {fileID: 9119919096763965904}
   humoIzq: {fileID: 1994436515}
   humoDer: {fileID: 1823763110}
+--- !u!1 &176260217 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3387578065553392663, guid: 577f93ae7edb76e4fbef1c8eb43d4f2a, type: 3}
+  m_PrefabInstance: {fileID: 835218116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &189453587 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4066212639028245443, guid: e11f73bbe1db6054997fc742597455df, type: 3}
@@ -2788,6 +2793,7 @@ MonoBehaviour:
   CorrectAnswer: {fileID: 610371804645500834}
   WrongAnswer: {fileID: 8568115836188621265}
   wrongAnswerDuration: 2
+  volumneEffectTPV: {fileID: 0}
 --- !u!1 &1022079468
 GameObject:
   m_ObjectHideFlags: 0
@@ -8954,6 +8960,10 @@ PrefabInstance:
       propertyPath: PantallaNegra
       value: 
       objectReference: {fileID: 1885159805}
+    - target: {fileID: 576460585504278868, guid: cc7e59c4e0ed39d4aa54391763364d77, type: 3}
+      propertyPath: volumneEffectTPV
+      value: 
+      objectReference: {fileID: 176260217}
     - target: {fileID: 9119919096872693771, guid: cc7e59c4e0ed39d4aa54391763364d77, type: 3}
       propertyPath: m_Name
       value: Correct
