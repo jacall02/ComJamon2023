@@ -13,6 +13,15 @@ public class FinalGrafos : Final
     [SerializeField]
     private GameObject facultad;
 
+    [SerializeField]
+    private GameObject avion;
+
+    [SerializeField]
+    private GameObject pantallaNegra;
+
+    [SerializeField]
+    private GameObject X;
+
     void Awake()
     {
         ID = IDFinales.Bombardeo;
@@ -22,10 +31,19 @@ public class FinalGrafos : Final
     public override void PasswordAccepted()
     {
         SoundManager.instance.PlayEffect(21, 1f);
+        X.SetActive(false);
         facultad.SetActive(true);
+        avion.SetActive(true);
         //efecto volumen MARP
         volumneEffectMARP.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
         // la contraseña es correcta y se acepta el final
         desactivador.ActivarNota(ID);
+        avion.GetComponent<Animator>().Play("Avion");
+        Invoke("ShowBlackScreen", 3.5f);
+    }
+
+    private void ShowBlackScreen()
+    {
+           pantallaNegra.SetActive(true);
     }
 }
