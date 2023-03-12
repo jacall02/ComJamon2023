@@ -13,6 +13,7 @@ public class DesactivadorBotones : MonoBehaviour
     [SerializeField] private List<ClickableDrag> herramientas;
 
     [SerializeField] private SpriteRenderer palancaIluminada;
+    [SerializeField] private GameObject particulasEstrellitas;
 
     public void Start()
     {
@@ -73,5 +74,7 @@ public class DesactivadorBotones : MonoBehaviour
         DesactivarTodo();
         GameManager.instance.ConseguirFinal(i);
         notas[(int)i].enabled = true;
+        Vector2 pos = notas[(int)i].gameObject.transform.position;
+        Instantiate(particulasEstrellitas, new Vector3(pos.x, pos.y, -1), Quaternion.identity);
     }
 }

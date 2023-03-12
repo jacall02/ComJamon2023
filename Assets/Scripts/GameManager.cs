@@ -4,6 +4,7 @@ using static System.Net.Mime.MediaTypeNames;
 using DG.Tweening;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using Unity.VisualScripting;
 
 public enum IDFinales
 {
@@ -82,10 +83,11 @@ public class GameManager : MonoBehaviour
 #endif
     }
 
+
     //JUGABILIDAD----------------------------------------------------
 
     //boton que da orden de abrirse o cerrarse
-   
+
 
     public int Submit()
     {
