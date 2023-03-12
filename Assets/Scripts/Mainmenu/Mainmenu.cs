@@ -15,15 +15,11 @@ public class Mainmenu : MonoBehaviour
 
     [SerializeField] private CanvasGroup canvasGroup;
     [SerializeField] private RectTransform myPanel;
+    [SerializeField] private AutoFillInputField playerName;
 
-    void Start()
+    private void Start()
     {
-       
-    }
-
-    void Update()
-    {
-        
+        playerName = GetComponent<AutoFillInputField>();
     }
 
     private void CambiaEscena(string sceneName)
@@ -34,6 +30,9 @@ public class Mainmenu : MonoBehaviour
 
     public void CambioEscenaGame(string sceneName)
     {
+        if (playerName.inputField1.text.Length < 1)
+            return;
+        InfoManager.instance.SetPlayerName(playerName.inputField1.text);
         canvasGroup.blocksRaycasts = true;
 
         myPanel.DOLocalMoveX(1500.0f, transitionDuration).SetEase(transitionEase).OnComplete(()=>CambiaEscena(sceneName));
