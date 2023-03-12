@@ -20,7 +20,7 @@ public class SubmitButton : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI textoCpp;
     [SerializeField]
-    private FinalPlagio plagio;
+    private Final plagio;
 
     public void AddOneSubmit()
     {
