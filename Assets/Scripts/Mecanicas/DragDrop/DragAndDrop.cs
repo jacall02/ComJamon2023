@@ -32,7 +32,7 @@ public class DragAndDrop : MonoBehaviour
     }
     //cuando el cursor esta encima lo detecta
     void OnMouseOver()
-     {
+    {
         //si se hace click izq
         if(!selected && Input.GetMouseButtonDown(0))
         {
@@ -40,8 +40,6 @@ public class DragAndDrop : MonoBehaviour
             selected = true;
             initPos = this.transform.position;
         }
-
-       
     }
 
 
