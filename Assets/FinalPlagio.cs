@@ -34,6 +34,8 @@ public class FinalPlagio : Final
     {
         //screen plagio
         screenPlagio.SetActive(true);
+        //plagio music
+        SoundManager.instance.PlayMusic(22, 1f);
         desactivador.ActivarNota(ID);
         volumneEffectMOT.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
 

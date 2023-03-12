@@ -18,6 +18,7 @@ public class FinalGrafos : Final
     }
     public override void PasswordAccepted()
     {
+        SoundManager.instance.PlayEffect(21, 1f);
         //efecto volumen MARP
         volumneEffectMARP.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
         // la contraseña es correcta y se acepta el final
