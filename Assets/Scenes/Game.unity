@@ -3170,6 +3170,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3387578065640215671, guid: 577f93ae7edb76e4fbef1c8eb43d4f2a, type: 3}
   m_PrefabInstance: {fileID: 835218116}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &835218118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7437079865708263943, guid: 577f93ae7edb76e4fbef1c8eb43d4f2a, type: 3}
+  m_PrefabInstance: {fileID: 835218116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &850636529 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7437079867070218948, guid: 577f93ae7edb76e4fbef1c8eb43d4f2a, type: 3}
@@ -5496,6 +5501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gO: {fileID: 152206241}
+  volumneEffectDV: {fileID: 835218118}
 --- !u!212 &1321676789
 SpriteRenderer:
   m_ObjectHideFlags: 0
