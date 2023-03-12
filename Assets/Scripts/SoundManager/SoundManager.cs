@@ -47,6 +47,7 @@ public class SoundManager : MonoBehaviour
 
         controlAudio.Stop();
         controlAudio.PlayOneShot(audios[indice], volumen);
+        controlAudio.PlayOneShot(audios[indice], volumen);
         
     }
 }

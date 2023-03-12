@@ -105,23 +105,23 @@ public class GameManager : MonoBehaviour
             Debug.Log("Correct Answer");
         }
 
-        //comprobacion de si hemos pulsado submit suficientes veces
-        if (Submits == 1)
-        {
-            SoundManager.instance.PlayMusic(31, 0.3f);
-        }
-        else if (Submits == 5)
-        {
-            SoundManager.instance.PlayMusic(32, 0.3f);
-        }
-        else if (Submits == 10)
-        {
-            SoundManager.instance.PlayMusic(33, 0.3f);
-        }
-        else if (Submits == 15)
-        {
-            SoundManager.instance.PlayMusic(34, 0.3f);
-        }
+        ////comprobacion de si hemos pulsado submit suficientes veces
+        //if (Submits == 1)
+        //{
+        //    SoundManager.instance.PlayMusic(31, 0.3f);
+        //}
+        //else if (Submits == 5)
+        //{
+        //    SoundManager.instance.PlayMusic(32, 0.3f);
+        //}
+        //else if (Submits == 10)
+        //{
+        //    SoundManager.instance.PlayMusic(33, 0.3f);
+        //}
+        //else if (Submits == 15)
+        //{
+        //    SoundManager.instance.PlayMusic(34, 0.3f);
+        //}
 
         return nSubmits;
     }
@@ -130,6 +130,6 @@ public class GameManager : MonoBehaviour
     {
         nSubmits = 0;
 
-        SoundManager.instance.PlayMusic(30, 0.3f);
+        //SoundManager.instance.PlayMusic(30, 0.3f);
     }
 }
