@@ -160,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0.65, y: 1.71}
+  m_AnchoredPosition: {x: 0.65, y: 1.61}
   m_SizeDelta: {x: 193.3059, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &32782968
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3164a6dc00a3c0546b5da48df684c869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charLimit: 30
+  charLimit: 18
 --- !u!114 &32782969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 3
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
