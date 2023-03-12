@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DragAndDrop : MonoBehaviour
@@ -9,6 +10,8 @@ public class DragAndDrop : MonoBehaviour
     private Vector3 initPos;
 
     public bool returnToInitAfterDrop = false;
+
+    DropListener dListener;
 
     // Update is called once per frame
     void Update()
@@ -24,14 +27,7 @@ public class DragAndDrop : MonoBehaviour
 
         if (selected && Input.GetMouseButtonUp(0))
         {
-            // no permitimos seleccion
-            selected = false;
-            //bd
-            if(returnToInitAfterDrop)
-            {
-                this.transform.position = initPos;
-            }
-
+            Drop();
         }
     }
     //cuando el cursor esta encima lo detecta
@@ -46,7 +42,39 @@ public class DragAndDrop : MonoBehaviour
         }
 
        
-     } 
+    }
 
-   
+
+    public void SetInitPos(Vector3 pos)
+    {
+        initPos = pos;
+    }
+
+    public Vector3 GetInitPos()
+    {
+        return initPos;
+    }
+
+
+    public void Drop()
+    {
+        // no permitimos seleccion
+        selected = false;
+        //bd
+        if (returnToInitAfterDrop)
+        {
+            this.transform.position = initPos;
+        }
+
+        if(dListener != null)
+        {
+            dListener.OnDrop(this);
+            dListener = null;
+        }
+    }
+
+    public void SetListener(DropListener dL)
+    {
+        dListener = dL;
+    }
 }
