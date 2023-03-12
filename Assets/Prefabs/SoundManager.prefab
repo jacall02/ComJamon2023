@@ -45,9 +45,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a1e01cf36345f4479aaff8cdfedc168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controlAudio: {fileID: 0}
   audios:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: b739306b54ef0a6438e367b73559c6f2, type: 3}
+  - {fileID: 8300000, guid: 0e34cd7dd91162c4aac6ca06c32d9651, type: 3}
+  - {fileID: 8300000, guid: de855cacb9761f245944b31990eb229d, type: 3}
+  - {fileID: 8300000, guid: ea7734f3c0a5cb747bc35bdb54db97c7, type: 3}
+  - {fileID: 8300000, guid: 7efd44cc8b7f2a345930b9b14bc94c19, type: 3}
+  - {fileID: 8300000, guid: b4ac33f742050c04c80cc22ce2bd9766, type: 3}
+  - {fileID: 8300000, guid: 24e6aa5af13123b4f9e527f0a9a9ca7b, type: 3}
 --- !u!82 &896694235684642628
 AudioSource:
   m_ObjectHideFlags: 0

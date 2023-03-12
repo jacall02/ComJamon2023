@@ -44,6 +44,7 @@ public class FinalMochila : Final
 
         guillem.transform.DOLocalMoveX(-2.23f, 8.0f).OnComplete(()=>Explota());
 
+        SoundManager.instance.PlayMusic(6, 0.2f);
     }
 
     private void Explota()

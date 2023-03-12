@@ -33,7 +33,7 @@ public class FinalE : Final
         if (EPressed >= limitesE)
         {
             //suena musica
-            SoundManager.instance.PlayMusic(1, 1f);
+            SoundManager.instance.PlayMusic(1, 0.2f);
 
             //efecto camara trasladando el volume MUS con animacion de 2 segundos
             volumneEffectMus.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
