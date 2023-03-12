@@ -20,6 +20,7 @@ public class FinalMochila : Final
     private GameObject explosion;
 
 
+
     private void Awake()
     {
         ID = IDFinales.RobarMochila;
@@ -33,6 +34,7 @@ public class FinalMochila : Final
     }
     public override void ActivateFinal()
     {
+
         desactivador.ActivarNota(ID);
 
         foreach (Transform g in screen.transform)
