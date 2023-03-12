@@ -8,7 +8,7 @@ public class GetPlayerName : MonoBehaviour
 {
 
     [SerializeField]
-    private int charLimit = 14;
+    private int charLimit = 16;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class GetPlayerName : MonoBehaviour
         if(text != null)
         {
             string s = InfoManager.instance.getInfo().name;
-            if(s.Length >  charLimit)
+            if(s.Length > charLimit)
             {
                 s = s.Substring(0, charLimit);
             }
