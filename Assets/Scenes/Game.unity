@@ -369,6 +369,7 @@ MonoBehaviour:
   wrongAnswer: {fileID: 9119919096763965904}
   humoIzq: {fileID: 1994436515}
   humoDer: {fileID: 1823763110}
+  volumneEffectEDA: {fileID: 1046720880}
 --- !u!1 &176260217 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3387578065553392663, guid: 577f93ae7edb76e4fbef1c8eb43d4f2a, type: 3}
@@ -2967,6 +2968,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64c99c5dbaecb85469e472da160d8116, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1046720880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3387578065504670344, guid: 577f93ae7edb76e4fbef1c8eb43d4f2a, type: 3}
+  m_PrefabInstance: {fileID: 835218116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1048708028
 GameObject:
   m_ObjectHideFlags: 0
@@ -8071,6 +8077,10 @@ PrefabInstance:
     - target: {fileID: 3607834530688920349, guid: c5042176c6384a24496e3d0babf45da0, type: 3}
       propertyPath: m_Name
       value: AnswerMessage
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607834530688920349, guid: c5042176c6384a24496e3d0babf45da0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5042176c6384a24496e3d0babf45da0, type: 3}

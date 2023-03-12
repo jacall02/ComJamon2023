@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +18,9 @@ public class TimeLimit : Final
 
     [SerializeField] private GameObject humoIzq;
     [SerializeField] private GameObject humoDer;
+
+    [SerializeField]
+    private GameObject volumneEffectEDA;
 
     private bool finalAvailable;
 
@@ -55,6 +59,8 @@ public class TimeLimit : Final
         {
             //aparece TimeLimit
             TLimit.SetActive(true);
+            //efecto de volumen Eda
+            volumneEffectEDA.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
             desactivador.DesactivarTodo();
             desactivador.ActivarNota(ID);
             wrongAnswer.SetActive(false);
