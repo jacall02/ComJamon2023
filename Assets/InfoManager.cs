@@ -22,6 +22,7 @@ public class InfoManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject); // don't destroy the GameManager object when a new scene is loaded
             DOTween.Init(true, true);
             info.name = "Usuario";
+            
         }
         else
         {

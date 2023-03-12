@@ -24,6 +24,7 @@ public class Mainmenu : MonoBehaviour
 
     private void CambiaEscena(string sceneName)
     {
+        SoundManager.instance.PlayEffect(26, 1f);
         // canvasGroup.DOFade(0f, transitionDuration).SetEase(transitionEase).OnComplete(() => SceneManager.LoadScene(sceneName));
         SceneManager.LoadScene(sceneName);
     }
