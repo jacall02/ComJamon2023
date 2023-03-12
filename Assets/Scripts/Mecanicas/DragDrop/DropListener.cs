@@ -6,6 +6,5 @@ public class DropListener : MonoBehaviour
 {
     public virtual void OnDrop(DragAndDrop dG)
     {
-
     }
 }
