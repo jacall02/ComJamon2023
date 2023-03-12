@@ -29,7 +29,7 @@ public class FinalPajaros : Final
     private void FotosPajaro()
     {
         Invoke("PonerNegro", 1f);
-        Invoke("QuitarNegro", 2f);
+        Invoke("QuitarNegro", 4f);
 
     }
 
@@ -37,6 +37,8 @@ public class FinalPajaros : Final
     {
         //activar negro durante 2 segundos
         negro.SetActive(true);
+        SoundManager.instance.PlayMusic(17, 0.6f);
+        Invoke("PajaroChillido", 2.8f);
     }
     private void QuitarNegro()
     {
@@ -44,13 +46,11 @@ public class FinalPajaros : Final
         //aparece pajaro
         paharo.SetActive(true);
         //alas pajaro
-        SoundManager.instance.PlayMusic(17, 0.2f);
         //pajaro berrido
-        Invoke("PajaroChillido", 0.4f);
     }
 
     private void PajaroChillido()
     {
-        SoundManager.instance.PlayMusic(18, 0.2f);
+        SoundManager.instance.PlayMusic(18, 0.4f);
     }
 }
