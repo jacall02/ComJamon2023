@@ -7,6 +7,9 @@ public class FinalCorrectAnswer : Final
     private int limiteSubmitsCorrect = 40;
 
     [SerializeField]
+    private GameObject PantallaNegra;
+
+    [SerializeField]
     private GameObject CorrectAnswer;
 
     [SerializeField]
@@ -57,5 +60,6 @@ public class FinalCorrectAnswer : Final
     public void AbrirCorrectAnswer()
     {
         CorrectAnswer.SetActive(true);
+        PantallaNegra.SetActive(true);
     }
 }
