@@ -7134,6 +7134,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1087472359}
     m_Modifications:
     - target: {fileID: 6888869014715381633, guid: e936f872f28e5894eb831f8f9393e36f, type: 3}
+      propertyPath: fC
+      value: 
+      objectReference: {fileID: 999231967}
+    - target: {fileID: 6888869014715381633, guid: e936f872f28e5894eb831f8f9393e36f, type: 3}
       propertyPath: notas.Array.data[0]
       value: 
       objectReference: {fileID: 1966509674}

@@ -15,6 +15,8 @@ public class DesactivadorBotones : MonoBehaviour
     [SerializeField] private SpriteRenderer palancaIluminada;
     [SerializeField] private GameObject particulasEstrellitas;
 
+    [SerializeField] private FinalCorrectAnswer fC;
+
     public void Start()
     {
         bool[] finales = GameManager.instance.GetFinales;
@@ -64,6 +66,8 @@ public class DesactivadorBotones : MonoBehaviour
             if (b != null)
                 b.enabled = false;
         }
+
+        fC.CerrarWrongAnswer();
 
         // Activamos animación a la palanca para que se vea
         palancaIluminada.DOFade(1.0f, 0.5f).SetLoops(-1, LoopType.Yoyo);

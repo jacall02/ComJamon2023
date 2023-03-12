@@ -40,6 +40,7 @@ public class FinalCorrectAnswer : Final
 
             desactivador.DesactivarTodo();
             desactivador.ActivarNota(ID);
+            CerrarWrongAnswer();
         }
         else
         {
