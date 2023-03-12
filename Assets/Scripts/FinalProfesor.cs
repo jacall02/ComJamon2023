@@ -30,6 +30,7 @@ public class FinalProfesor : Final
 
     public override void ActivateFinal()
     {
+        SoundManager.instance.PlayEffect(25, 1f);
         desactivador.ActivarNota(ID);
         guille.SetActive(true); 
         volumneEffectP3.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
