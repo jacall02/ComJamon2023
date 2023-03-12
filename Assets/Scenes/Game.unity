@@ -557,7 +557,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2080302811}
+      - m_Target: {fileID: 2080302817}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
         m_MethodName: AddCharacter
         m_Mode: 5
@@ -566,7 +566,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: D
+          m_StringArgument: 4
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &251560618
@@ -808,7 +808,7 @@ RectTransform:
   m_Children:
   - {fileID: 1539662136}
   m_Father: {fileID: 1087472359}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1272,7 +1272,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2080302811}
+      - m_Target: {fileID: 2080302817}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
         m_MethodName: AddCharacter
         m_Mode: 5
@@ -1281,7 +1281,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: D
+          m_StringArgument: 5
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &496778076
@@ -2275,7 +2275,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2080302811}
+      - m_Target: {fileID: 2080302817}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
         m_MethodName: AddCharacter
         m_Mode: 5
@@ -2284,7 +2284,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: B
+          m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &723469387
@@ -2562,7 +2562,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2080302811}
+      - m_Target: {fileID: 2080302817}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
         m_MethodName: AddCharacter
         m_Mode: 5
@@ -2571,7 +2571,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: A
+          m_StringArgument: 0
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &766816123
@@ -3987,11 +3987,11 @@ Transform:
   - {fileID: 1885159807}
   - {fileID: 1884176292}
   - {fileID: 1264301551}
+  - {fileID: 2080302810}
   - {fileID: 5104563799301151086}
   - {fileID: 2146009305}
   - {fileID: 333868604}
   - {fileID: 202715970}
-  - {fileID: 2080302810}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4078,7 +4078,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2080302811}
+      - m_Target: {fileID: 2080302817}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
         m_MethodName: AddCharacter
         m_Mode: 5
@@ -4087,7 +4087,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: D
+          m_StringArgument: 6
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1114784354
@@ -5067,8 +5067,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 4
+  m_fontSizeBase: 4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5931,7 +5931,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2080302811}
+      - m_Target: {fileID: 2080302817}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
         m_MethodName: AddCharacter
         m_Mode: 5
@@ -5940,7 +5940,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: A
+          m_StringArgument: 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1462105220
@@ -7418,7 +7418,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2080302811}
+      - m_Target: {fileID: 2080302817}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
         m_MethodName: AddCharacter
         m_Mode: 5
@@ -7427,7 +7427,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: D
+          m_StringArgument: 7
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1905301145
@@ -8044,7 +8044,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2080302811}
+      - m_Target: {fileID: 2080302817}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
         m_MethodName: AddCharacter
         m_Mode: 5
@@ -8053,7 +8053,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: D
+          m_StringArgument: 9
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1999966363
@@ -8177,7 +8177,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2080302811}
+      - m_Target: {fileID: 2080302817}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
         m_MethodName: AddCharacter
         m_Mode: 5
@@ -8186,7 +8186,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: D
+          m_StringArgument: 8
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2016242585
@@ -8485,7 +8485,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2080302811}
+      - m_Target: {fileID: 2080302817}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
         m_MethodName: AddCharacter
         m_Mode: 5
@@ -8494,7 +8494,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: C
+          m_StringArgument: 3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2066715083
@@ -8550,17 +8550,15 @@ GameObject:
   m_Component:
   - component: {fileID: 2080302810}
   - component: {fileID: 2080302815}
-  - component: {fileID: 2080302814}
-  - component: {fileID: 2080302811}
-  - component: {fileID: 2080302813}
-  - component: {fileID: 2080302812}
+  - component: {fileID: 2080302816}
+  - component: {fileID: 2080302817}
   m_Layer: 0
   m_Name: PanelNumeros
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2080302810
 Transform:
   m_ObjectHideFlags: 0
@@ -8575,68 +8573,8 @@ Transform:
   m_Children:
   - {fileID: 705878744}
   m_Father: {fileID: 1087472359}
-  m_RootOrder: 23
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 38.212, y: 0, z: 0}
---- !u!114 &2080302811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080302809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da0736d978410cc4489401c121cff3a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  finalPassword: ADBC
-  finalPassword2: DACA
-  text: {fileID: 1302426597}
-  passwordActive: 1
---- !u!114 &2080302812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080302809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59a2b0875f31be74e92dfad3e7f08bef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  password: {fileID: 2080302811}
-  volumneEffectMARP: {fileID: 318439420}
---- !u!114 &2080302813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080302809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 597c9db6dc17a6448a4571d6f808d2b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  password: {fileID: 2080302811}
-  cartel: {fileID: 371722132}
-  tornillo: {fileID: 851636791}
-  volumneEffectP3: {fileID: 1310161054}
---- !u!114 &2080302814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080302809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 320ec54d4ea94c0479f39ed62a51104e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CajonComportamiento: {fileID: 1213712166}
-  numeroSubmitsAbrirCajon: 5
 --- !u!212 &2080302815
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8689,6 +8627,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2080302816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080302809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 651526a739ada0e40a5fcb2401145c6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2080302817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080302809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da0736d978410cc4489401c121cff3a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalPassword: 426781098
+  finalPassword2: 0301
+  text: {fileID: 1302426597}
+  passwordActive: 1
 --- !u!1001 &2082217334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9384,7 +9350,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1087472359}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2146993378
 GameObject:
@@ -9509,7 +9475,7 @@ PrefabInstance:
       objectReference: {fileID: 1250507045210962, guid: 100cb67ffb35fcf448283bd55e6f2f20, type: 3}
     - target: {fileID: 5244297671387940033, guid: 57dc7b8b1c95ab44b8c614376fc01448, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 5244297671387940033, guid: 57dc7b8b1c95ab44b8c614376fc01448, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9985,6 +9951,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1087472359}
     m_Modifications:
     - target: {fileID: 5155247177115525091, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
+      propertyPath: panelNumerico
+      value: 
+      objectReference: {fileID: 2080302809}
+    - target: {fileID: 5155247177115525091, guid: b55e933e66604d74ebdd4bb9bc54735d, type: 3}
       propertyPath: CajonComportamiento
       value: 
       objectReference: {fileID: 1213712166}
@@ -10418,7 +10388,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5104563799301151086}
   - component: {fileID: 5104563799301151087}
-  - component: {fileID: 5622732591638186446}
   - component: {fileID: 5622732591638186447}
   - component: {fileID: 5622732591638186449}
   - component: {fileID: 5622732591638186448}
@@ -10443,7 +10412,7 @@ Transform:
   m_Children:
   - {fileID: 5104563799297534073}
   m_Father: {fileID: 1087472359}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 34.701, y: 0, z: 0}
 --- !u!212 &5104563799301151087
 SpriteRenderer:
@@ -10497,20 +10466,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5622732591638186446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5104563799301151085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 320ec54d4ea94c0479f39ed62a51104e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CajonComportamiento: {fileID: 1213712166}
-  numeroSubmitsAbrirCajon: 5
 --- !u!114 &5622732591638186447
 MonoBehaviour:
   m_ObjectHideFlags: 0
