@@ -474,6 +474,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &318439420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3387578064629586187, guid: 577f93ae7edb76e4fbef1c8eb43d4f2a, type: 3}
+  m_PrefabInstance: {fileID: 835218116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &326367725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8459,6 +8464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   password: {fileID: 5622732591638186447}
+  volumneEffectMARP: {fileID: 318439420}
 --- !u!1001 &6127241623724825201
 PrefabInstance:
   m_ObjectHideFlags: 0
