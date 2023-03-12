@@ -11,6 +11,8 @@ public class FinalProfesor : Final
 
     [SerializeField]
     private GameObject volumneEffectP3;
+    [SerializeField]
+    private GameObject guille;
 
     private void Awake()
     {
@@ -29,6 +31,7 @@ public class FinalProfesor : Final
     public override void ActivateFinal()
     {
         desactivador.ActivarNota(ID);
+        guille.SetActive(true); 
         volumneEffectP3.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
     }
 

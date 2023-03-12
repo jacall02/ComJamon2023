@@ -32,6 +32,7 @@ public class FinalPlagio : Final
     {
         desactivador.ActivarNota(ID);
         volumneEffectMOT.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
+
     }
 
 }
