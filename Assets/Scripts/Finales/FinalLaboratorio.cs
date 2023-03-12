@@ -13,6 +13,9 @@ public class FinalLaboratorio : Final
     private GameObject volumneEffectDSI;
 
     [SerializeField]
+    private SpriteSwapper camaraSprite;
+
+    [SerializeField]
     private GameObject banScreen;
     private bool lataActivada = false;
     private bool sonido = false;
@@ -46,6 +49,7 @@ public class FinalLaboratorio : Final
         {
             lataActivada = true;
             lata.transform.DOLocalMoveY(0.0f, 2.0f).SetEase(Ease.OutBounce);
+            camaraSprite.SwapSprite();
         }
     }
 

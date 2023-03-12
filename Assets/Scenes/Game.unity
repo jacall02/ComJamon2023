@@ -3942,6 +3942,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 773925882}
     - target: {fileID: 2461561101172644764, guid: ac1fc1ee8b7b5b6449ab58f10bb69732, type: 3}
+      propertyPath: camaraSprite
+      value: 
+      objectReference: {fileID: 2146993382}
+    - target: {fileID: 2461561101172644764, guid: ac1fc1ee8b7b5b6449ab58f10bb69732, type: 3}
       propertyPath: canvasAnimacion
       value: 
       objectReference: {fileID: 333868600}
@@ -10564,6 +10568,7 @@ GameObject:
   - component: {fileID: 2146993380}
   - component: {fileID: 2146993379}
   - component: {fileID: 2146993381}
+  - component: {fileID: 2146993382}
   m_Layer: 0
   m_Name: Camara
   m_TagString: Untagged
@@ -10659,6 +10664,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2146993382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146993378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 965d9aaecb07efc45954b1e2dd3f3cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Actual: {fileID: 21300000, guid: e4174b4d6ff74374fba6586c9ae5f972, type: 3}
+  Swapped: {fileID: 21300000, guid: d75610912e7542a4cab35e53a52ab1d4, type: 3}
 --- !u!1001 &115657395266359852
 PrefabInstance:
   m_ObjectHideFlags: 0
