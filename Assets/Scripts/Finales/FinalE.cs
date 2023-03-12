@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,9 @@ public class FinalE : Final
     //limite de veces que hay que pulsar E para final que suene musica
     [SerializeField]
     private int limitesE;
+
+    [SerializeField]
+    private GameObject volumneEffectMus;
     public int EPressed { get { return nE; } }
 
     void Awake()
@@ -31,6 +35,8 @@ public class FinalE : Final
             //suena musica
             SoundManager.instance.PlayMusic(1, 1f);
 
+            //efecto camara trasladando el volume MUS con animacion de 2 segundos
+            volumneEffectMus.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
             // final desbloqueado
             desactivador.ActivarNota(ID);
         }
