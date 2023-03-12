@@ -379,6 +379,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4066212639028245443, guid: e11f73bbe1db6054997fc742597455df, type: 3}
   m_PrefabInstance: {fileID: 1789818869}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &197690995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3387578065450909708, guid: 577f93ae7edb76e4fbef1c8eb43d4f2a, type: 3}
+  m_PrefabInstance: {fileID: 835218116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &202715970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5244297671387940033, guid: 57dc7b8b1c95ab44b8c614376fc01448, type: 3}
@@ -2637,6 +2642,10 @@ PrefabInstance:
       propertyPath: canvasAnimacion
       value: 
       objectReference: {fileID: 333868600}
+    - target: {fileID: 2461561101172644764, guid: ac1fc1ee8b7b5b6449ab58f10bb69732, type: 3}
+      propertyPath: volumneEffectDSI
+      value: 
+      objectReference: {fileID: 197690995}
     - target: {fileID: 2461561101172644765, guid: ac1fc1ee8b7b5b6449ab58f10bb69732, type: 3}
       propertyPath: m_RootOrder
       value: 17

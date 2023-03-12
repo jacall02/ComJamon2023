@@ -9,6 +9,8 @@ public class FinalLaboratorio : Final
     [SerializeField] private int nClicks = 30;
     [SerializeField] private string herramienta = "Destornillador";
     [SerializeField] private GameObject lata;
+    [SerializeField]
+    private GameObject volumneEffectDSI;
     private bool lataActivada = false;
     private bool sonido = false;
 
@@ -55,6 +57,8 @@ public class FinalLaboratorio : Final
                 SoundManager.instance.PlayEffect(2, 1f);
                 sonido = true;
 
+                //VOLUMEN DE DSI
+                volumneEffectDSI.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
                 // Final conseguido
                 desactivador.ActivarNota(ID);
 
