@@ -65,12 +65,14 @@ public class Password : MonoBehaviour
                 // Win effect
                 SoundManager.instance.PlayEffect(4, 1.0f);
                 myFinal.PasswordAccepted();
+                return;
             }
             else if (CheckPassword2())
             {
                 /// Win effect
                 SoundManager.instance.PlayEffect(4, 1.0f);
                 myFinal2.PasswordAccepted();
+                return;
             }
 
             if (password.Length >= passwordLength) {
@@ -85,7 +87,7 @@ public class Password : MonoBehaviour
         myFinal = fin;
     }
 
-    public void AttachFinalColores(Final fin)
+    public void AttachFinal2(Final fin)
     {
         myFinal2 = fin;
     }
