@@ -7,8 +7,10 @@ using UnityEngine.UI;
 public class Password : MonoBehaviour
 {
     private Final myFinal;
+    private Final myFinal2;
 
     [SerializeField] private string finalPassword;
+    [SerializeField] private string finalPassword2;
     [SerializeField] private TextMeshPro text;
 
     private int passwordLength;
@@ -20,10 +22,19 @@ public class Password : MonoBehaviour
         finalPassword = sol;
         passwordLength = sol.Length;
     }
+    public void SetPassword2(string sol)
+    {
+        finalPassword2 = sol;
+    }
+
 
     public bool CheckPassword()
     {
         return (password == finalPassword);
+    }
+    public bool CheckPassword2()
+    {
+        return (password == finalPassword2);
     }
 
     private void ResetPassword()
@@ -46,6 +57,11 @@ public class Password : MonoBehaviour
                     SoundManager.instance.PlayEffect(4, 1.0f);
                     myFinal.PasswordAccepted();
                 }
+                else if (CheckPassword2())
+                {
+                    SoundManager.instance.PlayEffect(4, 1.0f);
+                    myFinal2.PasswordAccepted();
+                }
                 else
                 {
                     // Lose effect
@@ -60,5 +76,10 @@ public class Password : MonoBehaviour
     public void AttachFinal(Final fin)
     {
         myFinal = fin;
+    }
+
+    public void AttachFinalColores(Final fin)
+    {
+        myFinal2 = fin;
     }
 }

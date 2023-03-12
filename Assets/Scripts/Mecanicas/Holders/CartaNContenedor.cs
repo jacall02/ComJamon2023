@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -45,6 +46,8 @@ public class CartaNContenedor : DropListener
             dG.enabled= false;
             //Llamar función carta
             panel.SetActive(true);
+            panel.transform.localScale = Vector3.zero;
+            panel.transform.DOScale(new Vector3(2, 2, 2), 1.0f).SetEase(Ease.OutBounce);
             SoundManager.instance.PlayEffect(4, 1.0f);
         }
     }

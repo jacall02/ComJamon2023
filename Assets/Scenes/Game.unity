@@ -692,8 +692,10 @@ GameObject:
   m_Component:
   - component: {fileID: 371722133}
   - component: {fileID: 371722134}
+  - component: {fileID: 371722136}
+  - component: {fileID: 371722137}
   m_Layer: 0
-  m_Name: papelPantalla
+  m_Name: panelPantalla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -766,6 +768,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &371722136
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371722132}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &371722137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371722132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e66939e34e608e4b84342d375bc12cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foto: {fileID: 371722132}
+  sprite: {fileID: 21300000, guid: b5f9162b5fcce774ea49a738d9ce4569, type: 3}
+  position: {x: -0.88, y: -0.7, z: -2.2}
 --- !u!95 &428551195 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6888869013786220265, guid: e936f872f28e5894eb831f8f9393e36f, type: 3}
@@ -1093,7 +1131,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -2658288887328299429, guid: f33b3c141cd7b07429bef185a10af3a9, type: 3}
   m_PrefabInstance: {fileID: 504927472}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 851636791}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64c99c5dbaecb85469e472da160d8116, type: 3}
@@ -2257,6 +2295,11 @@ PrefabInstance:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7437079867070218948, guid: 577f93ae7edb76e4fbef1c8eb43d4f2a, type: 3}
   m_PrefabInstance: {fileID: 835218116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &851636791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9132803062821768287, guid: f33b3c141cd7b07429bef185a10af3a9, type: 3}
+  m_PrefabInstance: {fileID: 504927472}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &855091151
 GameObject:
@@ -3574,6 +3617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foto: {fileID: 1186835949}
   sprite: {fileID: 21300000, guid: 5fb3f720065e61a4193a0ce68480f2fc, type: 3}
+  position: {x: -13.3, y: 0.6, z: 1.4}
 --- !u!1 &1188590167
 GameObject:
   m_ObjectHideFlags: 0
@@ -3968,7 +4012,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302426595}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3977,7 +4021,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.32, y: 3.03}
+  m_AnchoredPosition: {x: -1.32, y: 2.6}
   m_SizeDelta: {x: 1.3974, y: 0.4023}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1302426597
@@ -7143,6 +7187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foto: {fileID: 0}
   sprite: {fileID: 0}
+  position: {x: 0, y: 0, z: 0}
 --- !u!1 &2137376179
 GameObject:
   m_ObjectHideFlags: 0
@@ -8346,6 +8391,7 @@ GameObject:
   - component: {fileID: 5622732591638186446}
   - component: {fileID: 5622732591638186447}
   - component: {fileID: 5622732591638186448}
+  - component: {fileID: 5622732591638186449}
   m_Layer: 0
   m_Name: Panel Letras
   m_TagString: Untagged
@@ -8449,6 +8495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finalPassword: ADBC
+  finalPassword2: DACA
   text: {fileID: 1302426597}
   passwordActive: 1
 --- !u!114 &5622732591638186448
@@ -8465,6 +8512,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   password: {fileID: 5622732591638186447}
   volumneEffectMARP: {fileID: 318439420}
+--- !u!114 &5622732591638186449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5104563799301151085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597c9db6dc17a6448a4571d6f808d2b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  password: {fileID: 5622732591638186447}
+  cartel: {fileID: 371722132}
+  tornillo: {fileID: 851636791}
 --- !u!1001 &6127241623724825201
 PrefabInstance:
   m_ObjectHideFlags: 0
