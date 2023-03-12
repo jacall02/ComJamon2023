@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,9 @@ public class FinalProfesor : Final
     [SerializeField] Password password;
     [SerializeField] GameObject cartel;
     [SerializeField] GameObject tornillo;
+
+    [SerializeField]
+    private GameObject volumneEffectP3;
 
     private void Awake()
     {
@@ -20,8 +24,12 @@ public class FinalProfesor : Final
         // quitar panel pantalla
         cartel.GetComponent<QuitarImagen>().MoveImage();
         tornillo.GetComponent<BoxCollider2D>().enabled = true;
-        //desactivador.ActivarNota(ID);
     }
 
+    public override void ActivateFinal()
+    {
+        desactivador.ActivarNota(ID);
+        volumneEffectP3.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
+    }
 
 }

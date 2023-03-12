@@ -3,17 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rejilla : Final
+public class Rejilla : MonoBehaviour
 {
     private int nTornillos;
 
     private ClickableDrag cD;
 
-    [SerializeField]
-    private GameObject volumneEffectPVLI;
+    [SerializeField] Final myFinal;
+
     private void Awake()
     {
-        ID = IDFinales.Pajaros;
         nTornillos = GetComponentsInChildren<Tornillo>().Length;
     }
 
@@ -23,9 +22,9 @@ public class Rejilla : Final
         if (nTornillos == 0)
         {
             GetComponent<FallenObject>().Fall();
-            volumneEffectPVLI.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
-            desactivador.ActivarNota(IDFinales.Pajaros);
-            cD.ResetPosition();
+            myFinal.ActivateFinal();
+            if (cD != null)
+                cD.ResetPosition();
         }
     }
 
