@@ -59,6 +59,7 @@ public class TimeLimit : Final
         {
             //aparece TimeLimit
             TLimit.SetActive(true);
+            SoundManager.instance.PlayEffect(29, 1f);
             //efecto de volumen Eda
             volumneEffectEDA.transform.DOLocalMove(new Vector3(1.46f, -0.73f, -8.63f), 2.0f);
             desactivador.DesactivarTodo();
