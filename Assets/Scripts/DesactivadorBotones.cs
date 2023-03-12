@@ -65,7 +65,7 @@ public class DesactivadorBotones : MonoBehaviour
         }
 
         // Activamos animación a la palanca para que se vea
-        palancaIluminada.DOFade(1.0f, 0.5f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.OutSine);
+        palancaIluminada.DOFade(1.0f, 0.5f).SetLoops(-1, LoopType.Yoyo);
     }
 
     public void ActivarNota(IDFinales i)
