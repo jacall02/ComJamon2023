@@ -8222,7 +8222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5104563799301151086
 Transform:
   m_ObjectHideFlags: 0
@@ -8666,6 +8666,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4689896806983636277, guid: 8d37c6e823878cd4685c521d29c9aa37, type: 3}
+      propertyPath: panel
+      value: 
+      objectReference: {fileID: 5104563799301151085}
     - target: {fileID: 6130028205692424407, guid: 8d37c6e823878cd4685c521d29c9aa37, type: 3}
       propertyPath: m_TagString
       value: CartaN

@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class CartaNContenedor : DropListener
 {
-
     private Vector3 cardInitPos= Vector3.zero;
 
+    [SerializeField] public GameObject panel;
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -44,6 +44,8 @@ public class CartaNContenedor : DropListener
         {
             dG.enabled= false;
             //Llamar función carta
+            panel.SetActive(true);
+
         }
     }
 }
