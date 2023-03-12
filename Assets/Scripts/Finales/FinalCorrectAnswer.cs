@@ -18,14 +18,20 @@ public class FinalCorrectAnswer : Final
     [SerializeField]
     private protected float wrongAnswerDuration = 2f;
 
+    bool finalAvailable;
+
     void Awake()
     {
         ID = IDFinales.Correct;
-       
+        finalAvailable = true;
     }
 
     public void ComprobacionCorrectAnswer()
     {
+        if(!finalAvailable)
+        {
+            return;
+        }
         Invoke("CerrarWrongAnswer", 0.1f);
 
         //musica soundManager
@@ -41,6 +47,7 @@ public class FinalCorrectAnswer : Final
             desactivador.DesactivarTodo();
             desactivador.ActivarNota(ID);
             CerrarWrongAnswer();
+            finalAvailable = false;
         }
         else
         {
@@ -56,11 +63,19 @@ public class FinalCorrectAnswer : Final
     }
     public void AbrirWrongAnswer()
     {
+        if (!finalAvailable)
+            return;
         WrongAnswer.SetActive(true);
     }
     public void AbrirCorrectAnswer()
     {
         CorrectAnswer.SetActive(true);
         PantallaNegra.SetActive(true);
+    }
+
+    public void SetFinalNotAvaileble()
+    {
+        CerrarWrongAnswer();
+        finalAvailable = false;
     }
 }

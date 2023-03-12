@@ -12,6 +12,9 @@ public class TimeLimit : Final
     [SerializeField]
     private GameObject TLimit;
 
+    [SerializeField]
+    private GameObject wrongAnswer;
+
     [SerializeField] private GameObject humoIzq;
     [SerializeField] private GameObject humoDer;
 
@@ -54,6 +57,7 @@ public class TimeLimit : Final
             TLimit.SetActive(true);
             desactivador.DesactivarTodo();
             desactivador.ActivarNota(ID);
+            wrongAnswer.SetActive(false);
             finalAvailable = false;
         }
     }
