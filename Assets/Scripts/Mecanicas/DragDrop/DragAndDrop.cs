@@ -6,6 +6,9 @@ public class DragAndDrop : MonoBehaviour
 {
     private bool selected;
 
+    private Vector3 initPos;
+
+    public bool returnToInitAfterDrop = false;
 
     // Update is called once per frame
     void Update()
@@ -19,21 +22,27 @@ public class DragAndDrop : MonoBehaviour
             transform.position = new Vector3(cursorPos.x, cursorPos.y,-5);
         }
 
-        if (Input.GetMouseButtonUp(0))
+        if (selected && Input.GetMouseButtonUp(0))
         {
             // no permitimos seleccion
             selected = false;
             //bd
+            if(returnToInitAfterDrop)
+            {
+                this.transform.position = initPos;
+            }
+
         }
     }
     //cuando el cursor esta encima lo detecta
     void OnMouseOver()
      {
         //si se hace click izq
-        if(Input.GetMouseButtonDown(0))
+        if(!selected && Input.GetMouseButtonDown(0))
         {
             //permitimos seleccion
             selected = true;
+            initPos = this.transform.position;
         }
 
        
