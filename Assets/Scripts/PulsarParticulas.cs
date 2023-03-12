@@ -18,7 +18,7 @@ public class PulsarParticulas : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            SoundManager.instance.PlayEffect(20, 1f);
+            SoundManager.instance.PlayEffect(20, 0.05f);
             Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Instantiate(particulas, new Vector3(cursorPos.x, cursorPos.y, -6.0f), Quaternion.identity);
         }
