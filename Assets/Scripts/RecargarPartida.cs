@@ -19,6 +19,7 @@ public class RecargarPartida : MonoBehaviour
     {
         Debug.Log("Palancas pulsadas");
         pulsarPalanca.SetBool("palancapulsada", true);
+        SoundManager.instance.PlayEffect(27, 1f);
         palancaIluminada.SetActive(false);
         Invoke("QuitarPalanca", 1f);
 
@@ -28,6 +29,7 @@ public class RecargarPartida : MonoBehaviour
     {
         pulsarPalanca.SetBool("palancapulsada", false);
         SoundManager.instance.controlAudio.Stop();
+        SoundManager.instance.PlayEffect(28, 1f);
         GameManager.instance.RestartGame();
     }
 
