@@ -11,9 +11,9 @@ public class TimeLimit : Final
     //objeto TimeLimit que aparecerá en la pantalla
     [SerializeField]
     private GameObject TLimit;
-    //WrongAnswer que se debe desactivar
-    [SerializeField]
-    private GameObject wrongAnswer;
+
+    [SerializeField] private GameObject humoIzq;
+    [SerializeField] private GameObject humoDer;
 
     private bool finalAvailable;
 
@@ -30,9 +30,14 @@ public class TimeLimit : Final
             return;
 
         contadorTimeLimit -= Time.deltaTime;
+        if (contadorTimeLimit <= 0)
+        {
+            humoIzq.SetActive(true);
+            humoDer.SetActive(true);
+        }
         //Debug.Log(contadorTimeLimit);
 
-        if (GameManager.instance.Submits > 1)
+        if (GameManager.instance.Submits >= 1)
         {
             finalAvailable = false;
         }
@@ -47,7 +52,6 @@ public class TimeLimit : Final
         {
             //aparece TimeLimit
             TLimit.SetActive(true);
-            wrongAnswer.SetActive(false);
             desactivador.DesactivarTodo();
             desactivador.ActivarNota(ID);
             finalAvailable = false;
