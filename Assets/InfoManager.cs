@@ -21,12 +21,13 @@ public class InfoManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(this.gameObject); // don't destroy the GameManager object when a new scene is loaded
             DOTween.Init(true, true);
+            info.name = "Usuario";
         }
         else
         {
             Destroy(this.gameObject); // if an instance already exists, destroy this one
         }
-
+        
     }
 
     public Info getInfo()
